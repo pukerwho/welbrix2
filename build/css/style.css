@@ -63014,7 +63014,7 @@ h2 {
   margin-bottom: 1rem; }
 
 /* FILTERS */
-.filter .wpfFilterTitle {
+#filter .wpfFilterTitle {
   font-weight: 600;
   font-size: 14px;
   line-height: 22px;
@@ -63022,7 +63022,7 @@ h2 {
   text-transform: uppercase;
   color: #10084C; }
 
-.filter .wpfFilterButtons {
+#filter .wpfFilterButtons {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -63032,7 +63032,7 @@ h2 {
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column; }
-  .filter .wpfFilterButtons .wpfFilterButton {
+  #filter .wpfFilterButtons .wpfFilterButton {
     width: 100%;
     background: #2FA9ED;
     border-radius: 5px;
@@ -63045,7 +63045,7 @@ h2 {
     margin: 0;
     margin-bottom: 10px;
     padding: 18px; }
-  .filter .wpfFilterButtons .wpfClearButton {
+  #filter .wpfFilterButtons .wpfClearButton {
     width: 100%;
     background: #ffffff;
     border-radius: 5px;
@@ -63058,16 +63058,16 @@ h2 {
     margin: 0;
     padding: 18px; }
 
-.filter .wpfFilterContent .wpfPriceInputs {
+#filter .wpfFilterContent .wpfPriceInputs {
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between; }
 
-.filter .wpfCurrencySymbol {
+#filter .wpfCurrencySymbol {
   display: none; }
 
-.filter .wpfPriceRangeField {
+#filter .wpfPriceRangeField {
   width: 68px !important;
   background: #FFFFFF;
   border: 1px solid #DBDBDB;
@@ -63076,15 +63076,15 @@ h2 {
   color: #828282;
   padding: 10px; }
 
-.filter .wpfFilterDelimeter {
+#filter .wpfFilterDelimeter {
   display: none; }
 
-.filter #wpfSliderRange .ui-slider-range {
+#filter #wpfSliderRange .ui-slider-range {
   background-color: #10084C !important;
   -webkit-box-shadow: inset 0px 2px 3px black;
   box-shadow: inset 0px 2px 3px black; }
 
-.filter #wpfSliderRange.ui-slider.ui-widget-content .ui-slider-handle {
+#filter #wpfSliderRange.ui-slider.ui-widget-content .ui-slider-handle {
   width: 18px;
   height: 18px;
   top: 0;
@@ -63099,7 +63099,7 @@ h2 {
   -ms-transform: translateY(-6.5px);
   transform: translateY(-6.5px); }
 
-.filter #wpfSliderRange.ui-slider.ui-widget-content:not(.iris-slider-offset) {
+#filter #wpfSliderRange.ui-slider.ui-widget-content:not(.iris-slider-offset) {
   height: 5px;
   border: none;
   background: #E0E0E0;

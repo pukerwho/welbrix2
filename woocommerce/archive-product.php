@@ -19,8 +19,8 @@
 <div class="sidebar-fixed w-3/12 hidden md:block bg-white"></div>
 <div class="container mx-auto  px-4 md:px-0">
 	<div class="flex flex-col md:flex-row">
-		<div class="hidden md:block w-3/12 relative bg-white py-10">
-			<div class="filter">
+		<div class="hidden md:block w-3/12 relative bg-white py-10 pr-8">
+			<div id="filter" class="filter">
 				<?php echo do_shortcode('[wpf-filters id=1]') ?>
 			</div>
 		</div>
