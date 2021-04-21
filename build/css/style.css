@@ -63069,12 +63069,12 @@ h2 {
 
 #filter .wpfPriceRangeField#wpfMinPrice, #filter .wpfPriceRangeField#wpfMaxPrice {
   width: 68px !important;
-  background: #FFFFFF;
-  border: 1px solid #DBDBDB;
-  font-size: 10px;
-  line-height: 11px;
-  color: #828282;
-  padding: 10px; }
+  background: #FFFFFF !important;
+  border: 1px solid #DBDBDB !important;
+  font-size: 10px !important;
+  line-height: 11px !important;
+  color: #828282 !important;
+  padding: 10px !important; }
 
 #filter .wpfFilterDelimeter {
   display: none; }
