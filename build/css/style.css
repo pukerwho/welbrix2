@@ -63067,7 +63067,7 @@ h2 {
 #filter .wpfCurrencySymbol {
   display: none; }
 
-#filter .wpfPriceRangeField {
+#filter .wpfPriceRangeField#wpfMinPrice, #filter .wpfPriceRangeField#wpfMaxPrice {
   width: 68px !important;
   background: #FFFFFF;
   border: 1px solid #DBDBDB;
