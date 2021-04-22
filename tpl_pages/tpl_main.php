@@ -85,43 +85,89 @@ Template Name: ГЛАВНАЯ
 					<?php _e('Топ продаж', 'welbrix'); ?>
 				</h2>
 				<div class="hidden md:flex items-center">
-					<div class="products_tab_heading cursor-pointer active">
-						Трековые светильники
-					</div>
-					<div class="products_tab_heading cursor-pointer">
-						Споты
-					</div>
-					<div class="products_tab_heading cursor-pointer">
-						Точечные светильники
-					</div>
-					<div class="products_tab_heading cursor-pointer">
-						Светодиодные светильники
-					</div>
+
+					<!-- ПОЛУЧАЕМ КАТЕГОРИИ -->
+					<?php 
+						$product_categories = get_categories( array(
+					    'taxonomy'     => 'product_cat',
+						) );
+					?>
+					<!-- END ПОЛУЧАЕМ КАТЕГОРИИ -->
+
+					<?php foreach(array_slice($product_categories, 0, 4) as $product_cat): ?>
+						<div class="products_tab_heading cursor-pointer" data-nav-top-products="cat-<?php echo $product_cat->term_id; ?>">
+							<?php echo $product_cat->name; ?>
+						</div>	
+					<?php endforeach; ?>
+
 				</div>
 			</div>
-			<div class="flex flex-wrap md:-mx-4">
-				<div class="w-full md:w-1/4 md:px-4">
-					<!-- PRODUCT CARD -->
-					<div class="product_card">
-						<a href="#" class="product_card_link"></a>
-						<div class="product_card_thumb">
-							<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/product-thumb.jpg" alt="">
+			<?php foreach(array_slice($product_categories, 0, 4) as $product_cat): ?>
+				<div class="products_tab_content flex flex-wrap md:-mx-4" data-content-top-products="cat-<?php echo $product_cat->term_id; ?>">
+					<?php 
+						$query = new WP_Query( array( 
+							'post_type' => 'product', 
+							'posts_per_page' => 8,
+							'order'    => 'DESC',
+							'tax_query' => array(
+						    array(
+					        'taxonomy' => 'product_cat',
+							    'terms' => $product_cat->term_id,
+					        'field' => 'term_id',
+					        'include_children' => true,
+					        'operator' => 'IN'
+						    )
+							),
+						) );
+					if ($query->have_posts()) : while ($query->have_posts()) : $query->the_post(); ?>
+						<div class="w-full md:w-1/4 md:px-4">
+							<!-- PRODUCT CARD -->
+							<div class="product_card">
+								<a href="<?php echo $product->get_permalink(); ?>" class="product_card_link"></a>
+								<div class="product_card_thumb pt-4 md:pt-2">
+									<?php echo $product->get_image(); ?>
+								</div>
+								<div class="px-4 py-3">
+									<div class="product_card_id mb-2">
+										<?php _e('Код', 'welbrix'); ?>: <?php echo $product->get_sku(); ?>
+									</div>
+									<div class="product_card_title mb-8">
+										<?php the_title(); ?>
+									</div>
+									<div class="product_card_price">
+										<?php echo $product->get_price_html(); ?>
+									</div>
+									<div class="product_card_actions flex justify-between items-center">
+										<div class="product_card_actions_add">
+											<?php 
+												echo apply_filters( 'woocommerce_loop_add_to_cart_link',
+												sprintf( '<a href="%s" rel="nofollow" data-product_id="%s" data-product_sku="%s" class="%s product_type_%s">%s</a>',
+												esc_url( $product->add_to_cart_url() ),
+												esc_attr( $product->get_id() ),
+												esc_attr( $product->get_sku() ),
+												$product->is_purchasable() ? 'add_to_cart_button' : '',
+												esc_attr( $product->get_type() ),
+												esc_html( $product->add_to_cart_text() )
+												),
+												$product );
+											?>
+										</div>
+										<div class="product_card_actions_icons flex items-center">
+											<div class="mr-4">
+												<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/icons/fav-dark-icon.svg">
+											</div>
+											<div class="mr-4">
+												<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/icons/compare-icon.svg">
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- END PRODUCT CARD -->
 						</div>
-						<div class="px-4 py-3">
-							<div class="product_card_id mb-2">
-								Код: 1675387
-							</div>
-							<div class="product_card_title mb-8">
-								Спот Crystal Life 4x40 Вт E14 черный 15553-4
-							</div>
-							<div class="product_card_price">
-								1229.00 ₴
-							</div>
-						</div>
-					</div>
-					<!-- END PRODUCT CARD -->
-				</div>
-			</div>
+					<?php endwhile; endif; wp_reset_postdata(); ?>
+				</div>	
+			<?php endforeach; ?>
 		</div>
 	</div>
 </div>

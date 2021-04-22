@@ -62584,6 +62584,11 @@ h2 {
     -ms-transform: scaleX(1);
     transform: scaleX(1); }
 
+.products_tab_content {
+  display: none; }
+  .products_tab_content.active {
+    display: block; }
+
 .post {
   position: relative; }
   .post_link {

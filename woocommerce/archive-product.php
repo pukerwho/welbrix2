@@ -25,6 +25,7 @@
 			</div>
 		</div>
 		<div class="w-full md:w-9/12 py-10 md:pl-8">
+			<?php do_action( 'woocommerce_before_single_product' ); ?>	
 			<?php
 				if ( woocommerce_product_loop() ) {
 					
