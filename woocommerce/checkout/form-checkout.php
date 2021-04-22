@@ -51,6 +51,7 @@ if ( ! $checkout->is_registration_enabled() && $checkout->is_registration_requir
 				<div class="checkout_box bg-white rounded mb-8 p-5">
 					<h2 class="normal-case mb-12">3. <?php _e('Оплата', 'welbrix'); ?></h2>
 					<div>
+						<?php do_action( 'woocommerce_checkout_after_customer_details' ); ?>
 						<?php woocommerce_checkout_payment(); ?>
 					</div>
 				</div>
