@@ -47,6 +47,11 @@
               <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/icons/logo.svg" alt="Лого">
             </a>
           </div>
+          <div class="header_toggle md:hidden">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
           <div class="hidden md:flex items-center">
             <div class="header_bottom_menu">
               <?php wp_nav_menu([
@@ -87,5 +92,14 @@
       </div>
     </div>
   </header>
-  
+  <div class="mobile-menu">
+    <div class="container px-4">
+      <?php wp_nav_menu([
+        'theme_location' => 'bottom_header',
+        'container' => 'ul',
+        'menu_class' => 'flex flex-col py-5',
+      ]); ?>     
+    </div>
+    
+  </div>
   <section id="content" role="main">

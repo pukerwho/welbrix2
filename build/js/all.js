@@ -1,3 +1,9 @@
+$('.header_toggle').on('click', function(){
+  $(this).toggleClass('open');
+  $('.header').toggleClass('header_fixed');
+  $('body').toggleClass('overflow-hidden');
+  $('.mobile-menu').toggleClass('show');
+})
 /*!
  * Lightbox v2.10.0
  * by Lokesh Dhakar

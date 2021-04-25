@@ -42,7 +42,16 @@ if ( ! $checkout->is_registration_enabled() && $checkout->is_registration_requir
 				<div class="checkout_box bg-white rounded mb-8 p-5">
 					<h2 class="normal-case mb-12">2. <?php _e('Доставка', 'welbrix'); ?></h2>
 					<div>
+						<?php if ( WC()->cart->needs_shipping() && WC()->cart->show_shipping() ) : ?>
+
+							<?php do_action( 'woocommerce_review_order_before_shipping' ); ?>
+							<?php wc_cart_totals_shipping_html(); ?>
+							<?php do_action( 'woocommerce_review_order_after_shipping' ); ?>
+
+						<?php endif; ?>
+
 						<?php do_action( 'woocommerce_checkout_shipping' ); ?>
+						
 					</div>
 				</div>
 				<!-- END Доставка -->
@@ -51,7 +60,7 @@ if ( ! $checkout->is_registration_enabled() && $checkout->is_registration_requir
 				<div class="checkout_box bg-white rounded mb-8 p-5">
 					<h2 class="normal-case mb-12">3. <?php _e('Оплата', 'welbrix'); ?></h2>
 					<div>
-						<?php do_action( 'woocommerce_checkout_after_customer_details' ); ?>
+						
 						<?php woocommerce_checkout_payment(); ?>
 					</div>
 				</div>

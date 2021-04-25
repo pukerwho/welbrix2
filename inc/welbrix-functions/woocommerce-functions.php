@@ -45,6 +45,12 @@ function override_billing_checkout_fields( $fields ) {
 }
 
 add_filter( 'default_checkout_billing_country', 'truemisha_default_checkout_country' );
+ 
 function truemisha_default_checkout_country( $country ) {
-	return 'UA'; // двухбуквенный ISO код страны
+ 
+	if ( WC()->customer->get_is_paying_customer() ) {
+		return $country;
+	}
+ 
+	return 'UA';
 }
