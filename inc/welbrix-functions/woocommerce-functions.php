@@ -54,3 +54,14 @@ function truemisha_default_checkout_country( $country ) {
  
 	return 'UA';
 }
+
+add_action( 'woocommerce_before_quantity_input_field', 'truemisha_quantity_minus', 25 );
+add_action( 'woocommerce_after_quantity_input_field', 'truemisha_quantity_plus', 25 );
+
+function truemisha_quantity_minus() {
+	echo '<button type="button" class="quantity-down js-qty__adjust js-qty__adjust--minus woofc-item-qty-minus">-</button>';
+}
+function truemisha_quantity_plus() {
+	echo '<button type="button" class="quantity-up js-qty__adjust js-qty__adjust--plus woofc-item-qty-plus">+</button>';
+}
+
