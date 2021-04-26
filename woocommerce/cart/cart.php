@@ -78,7 +78,6 @@
 
 						<!-- PRICE -->
 						<div class="cart_item_price md:px-5 md:py-8 mr-0 md:mr-20">
-							<?php echo $cart_item['quantity']; ?>
 							<?php
 								echo apply_filters( 'woocommerce_cart_item_price', WC()->cart->get_product_price( $_product ), $cart_item, $cart_item_key ); // PHPCS: XSS ok.
 							?>
