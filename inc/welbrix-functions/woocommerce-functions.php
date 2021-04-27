@@ -81,8 +81,6 @@ function filter_woocommerce_cart_shipping_method_full_label( $label, $method ) {
 
    if( $method->method_id == "flat_rate" ) {
        $label = "Your Icon Image2".$label;
-   } else if( $method->method_id == "free_shipping" ) {
-       $label = '<img src="">'.$label;
    } else if( $method->method_id == "local_pickup" ) {
        $label = $label."Your Icon Image4";       
    } else if( $method->method_id == "nova_poshta_shipping" ) {
