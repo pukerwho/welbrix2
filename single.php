@@ -17,7 +17,7 @@
 		</div>
 	</div>
 	<div class="container mx-auto px-4 md:px-6 lg:px-0 py-12">
-		<div class="w-full lg:w-10/12 bg-white mx-auto px-24 py-8 rounded-lg content">
+		<div class="w-full lg:w-10/12 bg-white mx-auto px-3 lg:px-24 py-5 lg:py-8 rounded-lg content">
 			<?php the_content(); ?>
 		</div>
 	</div>
