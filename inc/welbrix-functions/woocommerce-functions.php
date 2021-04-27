@@ -82,7 +82,7 @@ function filter_woocommerce_cart_shipping_method_full_label( $label, $method ) {
    if( $method->method_id == "flat_rate" ) {
        $label = "Your Icon Image2".$label;
    } else if( $method->method_id == "local_pickup" ) {
-       $label = $label."Your Icon Image4";       
+       $label = $label;       
    } else if( $method->method_id == "nova_poshta_shipping" ) {
        $label = '<img src="https://www.welbrix.com/wp-content/uploads/2021/04/nova_poshta_logo.png">'.$label;      
    }
