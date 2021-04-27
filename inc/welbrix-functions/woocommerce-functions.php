@@ -65,3 +65,7 @@ function truemisha_quantity_plus() {
 	echo '<button type="button" class="quantity-up js-qty__adjust js-qty__adjust--plus woofc-item-qty-plus">+</button>';
 }
 
+add_filter( 'woocommerce_shipping_package_name', 'custom_shipping_package_name' );
+function custom_shipping_package_name( $name ) {
+  return '';
+}
