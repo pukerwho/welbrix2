@@ -63237,6 +63237,13 @@ h2 {
   .checkout input:focus {
     outline: none; }
 
+.checkout input[type="radio"], .checkout input[type="checkbox"] {
+  width: auto;
+  display: inline-block;
+  padding: 0;
+  margin-bottom: 0;
+  margin-right: 10px; }
+
 .checkout_cart_item {
   background: #F8F8F8;
   border-radius: 10px; }

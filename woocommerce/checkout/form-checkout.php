@@ -21,7 +21,7 @@ if ( ! $checkout->is_registration_enabled() && $checkout->is_registration_requir
 
 		<?php do_action( 'woocommerce_checkout_before_customer_details' ); ?>
 
-		<div class="flex md:-mx-4">
+		<div class="flex flex-col md:flex-row md:-mx-4">
 			<div class="w-full md:w-1/2 md:px-4">
 				<!-- Контактные данные -->
 				<div class="checkout_box bg-white rounded mb-8 p-5">
@@ -41,7 +41,7 @@ if ( ! $checkout->is_registration_enabled() && $checkout->is_registration_requir
 				<!-- Доставка -->
 				<div class="checkout_box bg-white rounded mb-8 p-5">
 					<h2 class="normal-case mb-12">2. <?php _e('Доставка', 'welbrix'); ?></h2>
-					<div>
+					<div class="op">
 						<?php if ( WC()->cart->needs_shipping() && WC()->cart->show_shipping() ) : ?>
 
 							<?php do_action( 'woocommerce_review_order_before_shipping' ); ?>
@@ -71,7 +71,7 @@ if ( ! $checkout->is_registration_enabled() && $checkout->is_registration_requir
 				</div>
 
 			</div>
-			<div class="w-full md:w-1/2 md:px-4">
+			<div class="hidden md:block w-full md:w-1/2 md:px-4">
 				<div class="checkout_box bg-white rounded mb-8 p-5">
 					<h2 class="normal-case mb-12"><?php _e('Корзина', 'welbrix'); ?></h2>
 					<?php woocommerce_order_review(); ?>
