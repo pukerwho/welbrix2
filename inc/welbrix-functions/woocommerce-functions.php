@@ -55,6 +55,8 @@ function truemisha_default_checkout_country( $country ) {
 	return 'UA';
 }
 
+
+//Добавляем кнопки плюс и минус в QTY 
 add_action( 'woocommerce_before_quantity_input_field', 'truemisha_quantity_minus', 25 );
 add_action( 'woocommerce_after_quantity_input_field', 'truemisha_quantity_plus', 25 );
 
@@ -65,7 +67,26 @@ function truemisha_quantity_plus() {
 	echo '<button type="button" class="quantity-up js-qty__adjust js-qty__adjust--plus woofc-item-qty-plus">+</button>';
 }
 
+//Удаляем текст Доставка перед полями
 add_filter( 'woocommerce_shipping_package_name', 'custom_shipping_package_name' );
 function custom_shipping_package_name( $name ) {
-  return '';
+  return;
+}
+
+
+//Добавляем иконки к методу доставки
+add_filter( 'woocommerce_cart_shipping_method_full_label', 'filter_woocommerce_cart_shipping_method_full_label', 10, 2 ); 
+function filter_woocommerce_cart_shipping_method_full_label( $label, $method ) { 
+   // Use the condition here with $method to apply the image to a specific method.      
+
+   if( $method->method_id == "flat_rate" ) {
+       $label = "Your Icon Image2".$label;
+   } else if( $method->method_id == "free_shipping" ) {
+       $label = '<img src="">'.$label;
+   } else if( $method->method_id == "local_pickup" ) {
+       $label = $label."Your Icon Image4";       
+   } else if( $method->method_id == "nova_poshta_shipping" ) {
+       $label = '<img src="">'.$label;      
+   }
+   return $label; 
 }
