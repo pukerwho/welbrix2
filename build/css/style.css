@@ -62427,7 +62427,7 @@ h2 {
   -ms-transform: translateY(-18px);
   transform: translateY(-18px); }
 
-.select2-container--default .select2-results__option--highlighted[aria-selected], .select2-container--default .select2-results__option--highlighted[data-selected] {
+.select2-results__option {
   font-size: 14px; }
 
 .header .logo img {
