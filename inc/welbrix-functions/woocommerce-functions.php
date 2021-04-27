@@ -23,6 +23,10 @@ function truemisha_del_fields( $fields ) {
  
 }
 
+//Удалить Детали на Доставке
+add_filter('woocommerce_enable_order_notes_field', '__return_false');
+
+
 // WooCommerce Checkout Fields Hook
 add_filter('woocommerce_checkout_fields','custom_wc_checkout_fields_no_label');
 function custom_wc_checkout_fields_no_label($fields) {

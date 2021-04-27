@@ -62413,6 +62413,7 @@ h2 {
 
 .select2-container--default .select2-selection--single {
   background: #F8F8F8;
+  font-size: 14px;
   border: none;
   border-radius: 0;
   padding: 10px 13px;
@@ -62425,6 +62426,9 @@ h2 {
   -webkit-transform: translateY(-18px);
   -ms-transform: translateY(-18px);
   transform: translateY(-18px); }
+
+.select2-container--default .select2-results__option--highlighted[aria-selected], .select2-container--default .select2-results__option--highlighted[data-selected] {
+  font-size: 14px; }
 
 .header .logo img {
   width: 153px; }
