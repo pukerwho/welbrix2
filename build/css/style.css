@@ -63003,6 +63003,19 @@ h2 {
     position: absolute;
     left: 0;
     top: 0;
+    z-index: 2; }
+  .product_card_badge {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 13px;
+    text-align: center;
+    background: #10084C;
+    border-radius: 10px 0px;
+    padding: 9px 8px;
     z-index: 1; }
   .product_card_thumb {
     height: 245px; }
@@ -63036,6 +63049,17 @@ h2 {
     font-size: 14px;
     line-height: 16px;
     color: #10084C; }
+    .product_card_price del {
+      font-weight: bold;
+      font-size: 12px;
+      line-height: 13px;
+      -webkit-text-decoration-line: line-through;
+      text-decoration-line: line-through;
+      color: #10084C;
+      opacity: 0.4;
+      margin-right: 15px; }
+    .product_card_price ins {
+      text-decoration: none; }
   .product_card_actions {
     width: 100%;
     position: absolute;

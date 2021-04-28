@@ -4,6 +4,13 @@
 	<!-- PRODUCT CARD -->
 	<div class="product_card">
 		<a href="<?php echo $product->get_permalink(); ?>" class="product_card_link"></a>
+		<!-- SALE BADGE -->
+		<?php $check_sale_price = $product->get_sale_price();  if ($check_sale_price): ?>
+			<div class="product_card_badge">
+				<?php _e('Акция', 'welbrix'); ?>
+			</div>
+		<?php endif; ?>
+		<!-- END SALE BADGE -->
 		<div class="product_card_thumb pt-4 md:pt-2">
 			<?php echo $product->get_image(); ?>
 		</div>
