@@ -63144,6 +63144,16 @@ h2 {
     .product_price {
       font-size: 18px;
       line-height: 36px; } }
+  .product_price del {
+    font-size: 20px;
+    opacity: 0.4;
+    margin-right: 15px; }
+    @media (max-width: 767px) {
+      .product_price del {
+        font-size: 16px;
+        margin-right: 10px; } }
+  .product_price ins {
+    text-decoration: none; }
 
 .product_btn {
   background: #10084C;
