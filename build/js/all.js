@@ -37,49 +37,13 @@ $(document).ready(function() {
   });
 });
 
-// jQuery('<div class="quantity-button quantity-up cursor-pointer">+</div>').insertAfter('.cart_item_qty input');
-// jQuery('<div class="quantity-button quantity-down cursor-pointer">-</div>').insertBefore('.cart_item_qty input');
-
-// const update_cart = $('[name=update_cart]');
-
-// jQuery('.quantity').each(function() {
-//   var spinner = jQuery(this),
-//     input = spinner.find('input[type="number"]'),
-//     btnUp = spinner.find('.quantity-up'),
-//     btnDown = spinner.find('.quantity-down'),
-//     min = input.attr('min'),
-//     max = input.attr('max');
-
-//   btnUp.click(function() {
-//     var oldValue = parseFloat(input.val());
-//     var newVal = oldValue + 1;
-//     spinner.find("input").val(newVal);
-//     spinner.find("input").trigger("change");
-//     input.val( newVal ).change();
-//   });
-
-//   btnDown.click(function() {
-//     var oldValue = parseFloat(input.val());
-//     if (oldValue <= min) {
-//       var newVal = oldValue;
-//     } else {
-//       var newVal = oldValue - 1;
-//     }
-//     spinner.find("input").val(newVal);
-//     spinner.find("input").trigger("change");
-//     input.val( newVal ).change();
-//   });
-// });
-
-// при клике на кнопки
-$( 'body' ).on( 'click', 'button.quantity-up, button.quantity-down', function() {
- 
+// Меняем значение КОЛ-ВО при клике на кнопки + и -
+$( 'body' ).on( 'click', 'button.quantity-up, button.quantity-down', function() { 
   var qty = $(this).parent().find( 'input' ),
       val = parseInt( qty.val() ),
       min = parseInt( qty.attr( 'min' ) ),
       max = parseInt( qty.attr( 'max' ) ),
       step = parseInt( qty.attr( 'step' ) );
- 
   // дальше меняем значение количества в зависимости от нажатия кнопки
   if ( $( this ).is( '.quantity-up' ) ) {
     if ( max && ( max <= val ) ) {
@@ -102,10 +66,18 @@ $( 'body' ).on( 'click', 'button.quantity-up, button.quantity-down', function() 
       $( '[name="update_cart"]' ).trigger( 'click' );
     }
   }
- 
 });
-
 $( 'body' ).on( 'change', '.qty', function() {
   $( '[name="update_cart"]' ).trigger( 'click' );
-  console.log('изменили');
+});
+
+
+//Открытие фильтра на мобильном
+$('.filter_mobile_toggle').on('click', function(){
+  $('.filter_mobile_cover').addClass('show');
+});
+
+//Закрытие фильтра на мобильном
+$('.filter_mobile_cover_close').on('click', function(){
+  $('.filter_mobile_cover').removeClass('show');
 });

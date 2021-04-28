@@ -129,7 +129,7 @@
 						<div class="product_description py-5 px-2 md:px-0 md:py-10 md:mr-10">
 							<span><?php _e('Описание', 'welbrix'); ?></span>
 							<div class="mt-3 mb-4">
-								Lorem, ipsum dolor sit, amet consectetur adipisicing elit. Quasi fuga recusandae sint cum provident vel, et ipsum aut, libero dolor.	
+								<?php echo $product->get_short_description(); ?>
 							</div>
 							<a href="#content-single-product"><?php _e('Подробнее', 'welbrix'); ?></a>
 						</div>
@@ -145,7 +145,7 @@
 					<h2><?php _e('Описание', 'welbrix'); ?></h2>
 					<div class="title uppercase mb-8"><?php the_title(); ?></div>
 					<div class="w-full lg:w-10/12 content">
-						Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium iste ducimus nostrum delectus debitis fugiat cupiditate at quisquam. Est, consectetur labore neque nihil sed quas similique quasi at voluptas fuga magni eaque, alias minus odit. Quo fugit quidem voluptate corporis libero quos numquam eos in sequi eius porro non rem voluptatum vitae ratione ducimus soluta animi qui magni, minima earum!
+						<?php the_content(); ?>
 					</div>	
 				</div>
 			</div>
