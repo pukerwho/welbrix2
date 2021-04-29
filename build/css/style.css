@@ -62919,6 +62919,26 @@ h2 {
 .breadcrumbs_home {
   opacity: 0.6; }
 
+.ups {
+  height: 350px; }
+  .ups_icon {
+    position: absolute;
+    bottom: -40px; }
+    @media (max-width: 767px) {
+      .ups_icon {
+        width: 45%;
+        top: 0;
+        bottom: 0;
+        left: -40px; } }
+  @media (max-width: 767px) {
+    .ups .btn_blue {
+      width: 95%;
+      width: calc(100% - 40px);
+      position: absolute;
+      bottom: 20px;
+      left: 20px;
+      right: 20px; } }
+
 .single_item {
   border-radius: 10px; }
   .single_item_thumb {
