@@ -62383,28 +62383,31 @@ h2 {
     list-style-type: disc;
     margin-bottom: 0.5rem; }
 
-.lang .menu-item-has-children > a {
-  position: relative;
-  padding-right: 5px; }
-  .lang .menu-item-has-children > a:after {
-    content: '';
-    position: absolute;
-    right: 0;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-    background: url("../../img/icons/arrow-down-icon.svg");
-    background-size: contain; }
-  .lang .menu-item-has-children > a:hover .sub-menu {
+.lang {
+  margin-right: 10px; }
+  .lang .menu-item-has-children > a {
+    position: relative;
+    padding-right: 5px; }
+    .lang .menu-item-has-children > a:after {
+      content: '';
+      width: 9px;
+      height: 5px;
+      position: absolute;
+      right: -10px;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+      background: url("../../img/icons/arrow-down-icon.svg");
+      background-size: contain; }
+  .lang .menu-item-has-children:hover .sub-menu {
     display: block; }
-
-.lang .sub-menu {
-  display: none;
-  position: absolute;
-  background-color: #ffffff;
-  margin: 0 -5px;
-  padding: 0 5px; }
+  .lang .sub-menu {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    margin: 0 -5px;
+    padding: 0 5px; }
 
 .btn_transparent {
   min-width: 350px;
