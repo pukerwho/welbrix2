@@ -62412,6 +62412,47 @@ h2 {
     .btn_blue {
       min-width: auto; } }
 
+.woocommerce-pagination {
+  padding-top: 30px; }
+  .woocommerce-pagination ul.page-numbers {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin: 0 -10px; }
+    .woocommerce-pagination ul.page-numbers li {
+      padding: 0 10px; }
+      .woocommerce-pagination ul.page-numbers li > .page-numbers {
+        width: 48px;
+        height: 48px;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 15px;
+        color: #10084C; }
+        .woocommerce-pagination ul.page-numbers li > .page-numbers.current {
+          color: #FFFFFF;
+          background: #2FA9ED;
+          border-radius: 5px; }
+      .woocommerce-pagination ul.page-numbers li i {
+        font-size: 21px;
+        font-weight: 700; }
+
 .select2-container--default .select2-selection--single {
   background: #F8F8F8;
   font-size: 14px;
@@ -63607,3 +63648,33 @@ h2 {
   border: none;
   background: #E0E0E0;
   border-radius: 20px; }
+
+#yith-wcwl-popup-message {
+  margin-left: 0 !important;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%); }
+
+.add_to_wishlist {
+  color: #10084C;
+  font-size: 20px; }
+
+.yith-wcwl-add-to-wishlist {
+  margin-top: 0; }
+
+.yith-wcwl-add-to-wishlist .feedback {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  .yith-wcwl-add-to-wishlist .feedback .yith-wcwl-icon {
+    margin-right: 0;
+    color: #10084C; }

@@ -161,7 +161,7 @@ Template Name: ГЛАВНАЯ
 										</div>
 										<div class="product_card_actions_icons flex items-center">
 											<div class="mr-4">
-												<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/icons/fav-dark-icon.svg">
+												<?php echo do_shortcode('[yith_wcwl_add_to_wishlist label="0" title="" product_added_text="" icon="fa fa-heart-o" already_in_wishslist_text="" browse_wishlist_text=""]'); ?>
 											</div>
 											<div class="mr-4">
 												<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/icons/compare-icon.svg">

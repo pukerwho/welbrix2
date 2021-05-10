@@ -59,6 +59,21 @@ function truemisha_default_checkout_country( $country ) {
 	return 'UA';
 }
 
+// Change the Number of WooCommerce Products Displayed Per Page
+add_filter( 'loop_shop_per_page', 'lw_loop_shop_per_page', 30 );
+function lw_loop_shop_per_page( $products ) {
+ $products = 2;
+ return $products;
+}
+
+add_filter( 'woocommerce_pagination_args', 	'rocket_woo_pagination' );
+function rocket_woo_pagination( $args ) {
+
+	$args['prev_text'] = '<i class="fa fa-angle-left"></i>';
+	$args['next_text'] = '<i class="fa fa-angle-right"></i>';
+
+	return $args;
+}
 
 //Добавляем кнопки плюс и минус в QTY 
 add_action( 'woocommerce_before_quantity_input_field', 'truemisha_quantity_minus', 25 );

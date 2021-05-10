@@ -65,7 +65,9 @@
                 <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/icons/search-icon.svg">  
               </div>
               <div class="header_bottom_icon">
-                <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/icons/fav-icon.svg">
+                <a href="<?php echo home_url(); ?>/wishlist">
+                  <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/icons/fav-icon.svg">
+                </a>
               </div>
               <div class="header_bottom_icon">
                 <a href="<?php echo get_permalink( get_option('woocommerce_myaccount_page_id') ); ?>">

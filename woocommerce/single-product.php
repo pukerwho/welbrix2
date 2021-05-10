@@ -118,7 +118,7 @@
 									?>
 								</div>
 								<div>
-									<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/icons/fav-dark-icon.svg" class="cursor-pointer">
+									<?php echo do_shortcode('[yith_wcwl_add_to_wishlist label="0" title="Add to Wishlist2" product_added_text="" icon="fa fa-heart-o" already_in_wishslist_text="" browse_wishlist_text="Избранное"]'); ?>
 								</div>
 							</div>
 							
