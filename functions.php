@@ -34,6 +34,7 @@ add_filter( 'woocommerce_enqueue_styles', '__return_empty_array' );
 register_nav_menus( array(
     'top_header' => 'Верхнее меню',
     'bottom_header' => 'Основное меню',
+    'lang_header' => 'Вывод языков',
     'footer_cat' => 'ФУТЕР (Категории)',
     'footer_info' => 'ФУТЕР (Информация)',
     'footer_links' => 'ФУТЕР (Ссылки)',

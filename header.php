@@ -35,6 +35,13 @@
               <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/icons/clock-icon.svg" class="mr-2">
               <span><?php _e('Без выходных 24/7', 'welbrix'); ?></span>
             </div>
+            <div>
+              <?php wp_nav_menu([
+                'theme_location' => 'lang_header',
+                'container' => 'div',
+                'menu_class' => 'flex',
+              ]); ?> 
+            </div>
           </div>
         </div>
       </div>
