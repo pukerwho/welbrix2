@@ -63704,3 +63704,23 @@ h2 {
   .yith-wcwl-add-to-wishlist .feedback .yith-wcwl-icon {
     margin-right: 0;
     color: #10084C; }
+
+.wishlist_table {
+  width: 100%; }
+  .wishlist_table thead {
+    background: #12114d;
+    color: #fff; }
+  .wishlist_table tbody {
+    background-color: #ffffff; }
+  .wishlist_table .product-add-to-cart a.button {
+    display: inline-block !important;
+    background-color: #10084C;
+    border-radius: 10px;
+    color: rgba(255, 255, 255, 0.9);
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 15px;
+    text-align: center;
+    letter-spacing: 0.06em;
+    padding: 0.75rem 1.75rem !important;
+    text-transform: uppercase; }
