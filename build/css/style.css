@@ -62784,7 +62784,10 @@ h2 {
 .products_tab_content {
   display: none; }
   .products_tab_content.active {
-    display: block; }
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; }
 
 .post {
   position: relative; }
