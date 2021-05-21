@@ -19,7 +19,7 @@ $wrapper_classes   = apply_filters( 'woocommerce_single_product_image_gallery_cl
 	<div class="product_gallery flex flex-col-reverse md:flex-row">
 		<div class="product_gallery_list flex flex-row md:flex-col p-2 md:p-5">
 			<!-- Показываем остальные -->
-			<?php foreach ( array_slice($attachment_ids, 1) as $attachment_id ): ?>
+			<?php foreach ( $attachment_ids as $attachment_id ): ?>
 				<?php 
 					$full_size         = apply_filters( 'woocommerce_gallery_full_size', apply_filters( 'woocommerce_product_thumbnails_large_size', 'full' ) );
 					$thumb_size         = 'single-slide';
