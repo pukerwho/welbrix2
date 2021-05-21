@@ -28,7 +28,7 @@
 	      Field::make( 'text', 'product_info_cct', 'CCT' ),
 	      Field::make( 'text', 'product_info_pitanie', 'Питание' ),
 	      Field::make( 'text', 'product_info_montag', 'Монтаж' ),
-	      Field::make( 'text', 'product_info_shirina_vnutri', 'Ширина внутриняя' ),
+	      Field::make( 'text', 'product_info_shirina_vnutri', 'Ширина внутренняя' ),
 	      Field::make( 'text', 'product_info_glubina_vrezki', 'Глубина врезки' ),
 	      Field::make( 'text', 'product_info_color', 'Цвет' ),
 	      Field::make( 'text', 'product_info_napriazhenie', 'Напряжение' ),

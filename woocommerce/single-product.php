@@ -314,7 +314,7 @@
 						<?php if(carbon_get_the_post_meta('product_info_shirina_vnutri')): ?>
 						<div class="product_params_item w-full md:w-1/2 flex items-end justify-between md:px-4 py-5 md:py-2">
 							<div>
-								<?php _e('Ширина внутриняя', 'welbrix'); ?>
+								<?php _e('Ширина внутренняя', 'welbrix'); ?>
 							</div>
 							<div>
 								<?php echo carbon_get_the_post_meta('product_info_shirina_vnutri'); ?>
