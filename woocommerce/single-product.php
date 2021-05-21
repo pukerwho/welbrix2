@@ -140,6 +140,7 @@
 			<!-- END ОСНОВНАЯ ИНФОРМАЦИЯ О ПРОДУКТЕ -->
 
 			<!-- ОПИСАНИЕ ПРОДУКТА -->
+			<?php if ( !empty( get_the_content() ) ): ?>
 			<div id="content-single-product" class="product-box bg-white mb-8">
 				<div class="product_content px-2 md:px-8 py-5 md:py-12">
 					<h2><?php _e('Описание', 'welbrix'); ?></h2>
@@ -149,6 +150,7 @@
 					</div>	
 				</div>
 			</div>
+			<?php endif; ?>
 			<!-- END ОПИСАНИЕ ПРОДУКТА -->
 
 			<!-- ХАРАКТЕРИСТИКИ ПРОДУКТА -->
