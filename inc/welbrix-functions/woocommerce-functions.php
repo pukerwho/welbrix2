@@ -62,7 +62,7 @@ function truemisha_default_checkout_country( $country ) {
 // Change the Number of WooCommerce Products Displayed Per Page
 add_filter( 'loop_shop_per_page', 'lw_loop_shop_per_page', 30 );
 function lw_loop_shop_per_page( $products ) {
- $products = 2;
+ $products = 15;
  return $products;
 }
 
