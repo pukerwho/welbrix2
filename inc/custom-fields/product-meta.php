@@ -33,6 +33,8 @@
 	      Field::make( 'text', 'product_info_color', 'Цвет' ),
 	      Field::make( 'text', 'product_info_napriazhenie', 'Напряжение' ),
 	      Field::make( 'text', 'product_info_max_nagruzka', 'Максимальная нагрузка' ),
+	      Field::make( 'text', 'product_info_diametr', 'Диаметр' ),
+	      Field::make( 'text', 'product_info_material_korpusa', 'Материал корпуса' ),
 	  ) );
 	}
 

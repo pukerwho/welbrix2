@@ -368,6 +368,28 @@
 						</div>
 						<?php endif; ?>	
 
+						<?php if(carbon_get_the_post_meta('product_info_diametr')): ?>
+						<div class="product_params_item w-full md:w-1/2 flex items-end justify-between md:px-4 py-5 md:py-2">
+							<div>
+								<?php _e('Диаметр', 'welbrix'); ?>
+							</div>
+							<div>
+								<?php echo carbon_get_the_post_meta('product_info_diametr'); ?>
+							</div>
+						</div>
+						<?php endif; ?>	
+
+						<?php if(carbon_get_the_post_meta('product_info_material_korpusa')): ?>
+						<div class="product_params_item w-full md:w-1/2 flex items-end justify-between md:px-4 py-5 md:py-2">
+							<div>
+								<?php _e('Материал корпуса', 'welbrix'); ?>
+							</div>
+							<div>
+								<?php echo carbon_get_the_post_meta('product_info_material_korpusa'); ?>
+							</div>
+						</div>
+						<?php endif; ?>	
+
 					</div>
 				</div>
 			</div>
