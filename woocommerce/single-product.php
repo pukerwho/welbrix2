@@ -222,6 +222,150 @@
 							</div>
 						</div>
 						<?php endif; ?>	
+
+						<?php if(carbon_get_the_post_meta('product_info_dlina')): ?>
+						<div class="product_params_item w-full md:w-1/2 flex items-end justify-between md:px-4 py-5 md:py-2">
+							<div>
+								<?php _e('Длина', 'welbrix'); ?>
+							</div>
+							<div>
+								<?php echo carbon_get_the_post_meta('product_info_dlina'); ?>
+							</div>
+						</div>
+						<?php endif; ?>
+
+						<?php if(carbon_get_the_post_meta('product_info_shirina')): ?>
+						<div class="product_params_item w-full md:w-1/2 flex items-end justify-between md:px-4 py-5 md:py-2">
+							<div>
+								<?php _e('Ширина', 'welbrix'); ?>
+							</div>
+							<div>
+								<?php echo carbon_get_the_post_meta('product_info_shirina'); ?>
+							</div>
+						</div>
+						<?php endif; ?>	
+
+						<?php if(carbon_get_the_post_meta('product_info_visota')): ?>
+						<div class="product_params_item w-full md:w-1/2 flex items-end justify-between md:px-4 py-5 md:py-2">
+							<div>
+								<?php _e('Высота', 'welbrix'); ?>
+							</div>
+							<div>
+								<?php echo carbon_get_the_post_meta('product_info_visota'); ?>
+							</div>
+						</div>
+						<?php endif; ?>	
+
+						<?php if(carbon_get_the_post_meta('product_info_moshnist')): ?>
+						<div class="product_params_item w-full md:w-1/2 flex items-end justify-between md:px-4 py-5 md:py-2">
+							<div>
+								<?php _e('Мощность', 'welbrix'); ?>
+							</div>
+							<div>
+								<?php echo carbon_get_the_post_meta('product_info_moshnist'); ?>
+							</div>
+						</div>
+						<?php endif; ?>	
+
+						<?php if(carbon_get_the_post_meta('product_info_qty_istochnikov')): ?>
+						<div class="product_params_item w-full md:w-1/2 flex items-end justify-between md:px-4 py-5 md:py-2">
+							<div>
+								<?php _e('Кол-во источников света', 'welbrix'); ?>
+							</div>
+							<div>
+								<?php echo carbon_get_the_post_meta('product_info_qty_istochnikov'); ?>
+							</div>
+						</div>
+						<?php endif; ?>	
+
+						<?php if(carbon_get_the_post_meta('product_info_cct')): ?>
+						<div class="product_params_item w-full md:w-1/2 flex items-end justify-between md:px-4 py-5 md:py-2">
+							<div>
+								<?php _e('CCT', 'welbrix'); ?>
+							</div>
+							<div>
+								<?php echo carbon_get_the_post_meta('product_info_cct'); ?>
+							</div>
+						</div>
+						<?php endif; ?>	
+
+						<?php if(carbon_get_the_post_meta('product_info_pitanie')): ?>
+						<div class="product_params_item w-full md:w-1/2 flex items-end justify-between md:px-4 py-5 md:py-2">
+							<div>
+								<?php _e('Питание', 'welbrix'); ?>
+							</div>
+							<div>
+								<?php echo carbon_get_the_post_meta('product_info_pitanie'); ?>
+							</div>
+						</div>
+						<?php endif; ?>	
+
+						<?php if(carbon_get_the_post_meta('product_info_montag')): ?>
+						<div class="product_params_item w-full md:w-1/2 flex items-end justify-between md:px-4 py-5 md:py-2">
+							<div>
+								<?php _e('Монтаж', 'welbrix'); ?>
+							</div>
+							<div>
+								<?php echo carbon_get_the_post_meta('product_info_montag'); ?>
+							</div>
+						</div>
+						<?php endif; ?>	
+
+						<?php if(carbon_get_the_post_meta('product_info_shirina_vnutri')): ?>
+						<div class="product_params_item w-full md:w-1/2 flex items-end justify-between md:px-4 py-5 md:py-2">
+							<div>
+								<?php _e('Ширина внутриняя', 'welbrix'); ?>
+							</div>
+							<div>
+								<?php echo carbon_get_the_post_meta('product_info_shirina_vnutri'); ?>
+							</div>
+						</div>
+						<?php endif; ?>	
+
+						<?php if(carbon_get_the_post_meta('product_info_glubina_vrezki')): ?>
+						<div class="product_params_item w-full md:w-1/2 flex items-end justify-between md:px-4 py-5 md:py-2">
+							<div>
+								<?php _e('Глубина врезки', 'welbrix'); ?>
+							</div>
+							<div>
+								<?php echo carbon_get_the_post_meta('product_info_glubina_vrezki'); ?>
+							</div>
+						</div>
+						<?php endif; ?>
+
+						<?php if(carbon_get_the_post_meta('product_info_color')): ?>
+						<div class="product_params_item w-full md:w-1/2 flex items-end justify-between md:px-4 py-5 md:py-2">
+							<div>
+								<?php _e('Цвет', 'welbrix'); ?>
+							</div>
+							<div>
+								<?php echo carbon_get_the_post_meta('product_info_color'); ?>
+							</div>
+						</div>
+						<?php endif; ?>	
+
+						<?php if(carbon_get_the_post_meta('product_info_napriazhenie')): ?>
+						<div class="product_params_item w-full md:w-1/2 flex items-end justify-between md:px-4 py-5 md:py-2">
+							<div>
+								<?php _e('Напряжение', 'welbrix'); ?>
+							</div>
+							<div>
+								<?php echo carbon_get_the_post_meta('product_info_napriazhenie'); ?>
+							</div>
+						</div>
+						<?php endif; ?>	
+
+						<?php if(carbon_get_the_post_meta('product_info_max_nagruzka')): ?>
+						<div class="product_params_item w-full md:w-1/2 flex items-end justify-between md:px-4 py-5 md:py-2">
+							<div>
+								<?php _e('Максимальная нагрузка', 'welbrix'); ?>
+							</div>
+							<div>
+								<?php echo carbon_get_the_post_meta('product_info_max_nagruzka'); ?>
+							</div>
+						</div>
+						<?php endif; ?>	
+
 					</div>
 				</div>
 			</div>

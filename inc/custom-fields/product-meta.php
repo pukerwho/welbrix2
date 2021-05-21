@@ -19,6 +19,20 @@
 	      Field::make( 'text', 'product_info_tempcolor', 'Температура цвет, К' ),
 	      Field::make( 'text', 'product_info_diapazon', 'Диапазон рабочего напряжения, V' ),
 	      Field::make( 'text', 'product_info_qr', 'Штрихкод' ),
+
+	      Field::make( 'text', 'product_info_dlina', 'Длина' ),
+	      Field::make( 'text', 'product_info_shirina', 'Ширина' ),
+	      Field::make( 'text', 'product_info_visota', 'Высота' ),
+	      Field::make( 'text', 'product_info_moshnist', 'Мощность' ),
+	      Field::make( 'text', 'product_info_qty_istochnikov', 'Кол-во источников света' ),
+	      Field::make( 'text', 'product_info_cct', 'CCT' ),
+	      Field::make( 'text', 'product_info_pitanie', 'Питание' ),
+	      Field::make( 'text', 'product_info_montag', 'Монтаж' ),
+	      Field::make( 'text', 'product_info_shirina_vnutri', 'Ширина внутриняя' ),
+	      Field::make( 'text', 'product_info_glubina_vrezki', 'Глубина врезки' ),
+	      Field::make( 'text', 'product_info_color', 'Цвет' ),
+	      Field::make( 'text', 'product_info_napriazhenie', 'Напряжение' ),
+	      Field::make( 'text', 'product_info_max_nagruzka', 'Максимальная нагрузка' ),
 	  ) );
 	}
 
