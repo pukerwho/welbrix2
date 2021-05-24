@@ -7,6 +7,12 @@ add_action( 'carbon_fields_register_fields', 'crb_attach_theme_options' );
 function crb_attach_theme_options() {
   Container::make( 'theme_options', __('Welbrix') )
   	->add_tab( __('Главная страница'), array(
+      Field::make( 'complex', 'crb_main_sliders', 'Главный слайдер' )
+          ->add_fields( array(
+            Field::make( 'image', 'crb_main_slider_img', 'Картинка' ),
+            Field::make( 'text', 'crb_main_slider_link', 'Ссылка' ),
+          ) 
+        ),
   		Field::make( 'rich_text', 'crb_main_text' . crb_get_i18n_suffix(), 'Текст на странице' ),
       
       Field::make( 'image', 'crb_main_cat_one_thumb', 'Картинка для категории №1' ),

@@ -11,16 +11,35 @@ Template Name: ГЛАВНАЯ
 	<div class="container mx-auto px-4 md:px-0">
 		<div class="flex flex-wrap mx-0 md:-mx-4">
 			<div class="w-full md:w-1/2 px-0 md:px-4">
-				<div class="welcome_slider">
-					<div class="welcome_slider_wrap">
-						<div class="welcome_slider_item">
-							<div class="welcome_slider_item_title">
-								LED лампы Philips со скидкой 35%
-							</div>
-							<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/welcome_slider.png">
+				<!-- Слайдер Контейнер -->
+				<div class="welcome_slider swiper-container swiper-welcome-container">
+					<div class="welcome_slider_wrap swiper-wrapper">
+						<?php 
+						$welcome_sliders = crb_get_i18n_theme_option('crb_main_sliders');
+						foreach( $welcome_sliders as $welcome_slider ): ?>
+						<!-- СЛАЙДЕР ITEM -->
+						<div class="swiper-slide welcome_slider_item">
+							<!-- <div class="welcome_slider_item_title"></div> -->
+							<?php 
+							 $welcome_photo_medium = wp_get_attachment_image_src($welcome_slider['crb_main_slider_img'], 'medium'); 
+							 $welcome_photo_large = wp_get_attachment_image_src($welcome_slider['crb_main_slider_img'], 'large');
+							 $welcome_photo_full = wp_get_attachment_image_src($welcome_slider['crb_main_slider_img'], 'full');
+							?>
+							<img srcset="<?php echo $welcome_photo_medium[0] ?> 767w, 
+										<?php echo $welcome_photo_large[0] ?> 1280w,
+										<?php echo $welcome_photo_full[0] ?> 1440w"
+										sizes="(max-width: 767px) 767px,
+									  (max-width: 1280px) 1280px,
+									  1440px"
+							src="<?php echo $welcome_photo_full[0] ?>">
 						</div>
+						<!-- END СЛАЙДЕР ITEM -->
+						<?php endforeach; ?>
 					</div>
+					<div class="swiper-button-next swiper-welcome-next"></div>
+						<div class="swiper-button-prev swiper-welcome-prev"></div>
 				</div>
+				<!-- END Слайдер Контейнер -->
 			</div>
 			<div class="w-full md:w-1/2 px-0 md:px-4">
 				<div class="flex flex-wrap">
