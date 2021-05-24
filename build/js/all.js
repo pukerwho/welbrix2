@@ -18,6 +18,8 @@ function closeModal(attrModal) {
 
 $('.modal-js').on('click', function(e){
   var clickModalData = $(this).data('modal');
+  var clickModalTitle = $(this).data('title');
+  $('.product-title-js').text(clickModalTitle);
   openModal(clickModalData);
 });
 

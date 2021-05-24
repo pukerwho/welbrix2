@@ -132,7 +132,7 @@
       ✖️
     </div>
     <div class="text-xl mb-5">
-      <?php _e('Купить', 'welbrix'); ?>: <?php the_title(); ?>
+      <?php _e('Купить', 'welbrix'); ?>: <span class="product-title-js"></span>
     </div>
     <div>
       <!-- ФОРМА -->
@@ -146,7 +146,7 @@
           <?php _e('Отправить', 'treba'); ?>
         </button>
       </form>
-      <div class="success_order hidden bg-green-700 px-2 py-4 mt-4">
+      <div class="success_order hidden bg-green-500 px-2 py-4 mt-4">
         👌 <?php _e('Отлично, мы получили Вашу заявку. В ближайшее время с Вами свяжется наш менеджер', 'treba'); ?>. 
       </div>
       <!-- END ФОРМА -->
@@ -158,7 +158,7 @@
 <div class="modal-bg"></div>
 
 <?php wp_footer(); ?>
-<script type="text/javascript">
+<!-- <script type="text/javascript">
   var ZCallbackWidgetLinkId  = '064fc9bb4c7407d2bbbc45f5440e2f9a';
   var ZCallbackWidgetDomain  = 'my.zadarma.com';
   (function(){
@@ -171,6 +171,6 @@
       if (sc) sc.parentNode.insertBefore(lt, sc);
       else document.documentElement.firstChild.appendChild(lt);
   })();
-</script>
+</script> -->
 </body>
 </html>
