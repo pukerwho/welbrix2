@@ -101,8 +101,8 @@ Template Name: ГЛАВНАЯ
 			<div class="advantage_item w-full md:w-1/3 flex md:px-4 mb-8 md:mb-0">
 				<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/icons/delivery-icon.svg" class="mr-3">
 				<div>
-					<p><?php _e('Бесплатная доставка', 'welbrix'); ?></p>
-					<span><?php _e('При заказе от 1000 грн', 'welbrix'); ?></span>
+					<p><?php _e('Доставка', 'welbrix'); ?></p>
+					<span><?php _e('Доставка по всем регионам Украины', 'welbrix'); ?></span>
 				</div>
 			</div>
 			<div class="advantage_item w-full md:w-1/3 flex md:px-4 mb-8 md:mb-0">
@@ -116,7 +116,7 @@ Template Name: ГЛАВНАЯ
 				<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/icons/garant-icon.svg" class="mr-3">
 				<div>
 					<p><?php _e('Гарантия', 'welbrix'); ?></p>
-					<span><?php _e('Официальная гарантия от производителя', 'welbrix'); ?></span>
+					<span><?php _e('Официальная гарантия от производителя 2 года', 'welbrix'); ?></span>
 				</div>
 			</div>
 		</div>
