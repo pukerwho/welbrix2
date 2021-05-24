@@ -20,9 +20,9 @@ function crb_attach_theme_options() {
       Field::make( 'image', 'crb_main_cat_three_thumb', 'Картинка для категории №3' ),
       Field::make( 'text', 'crb_main_cat_three_title' . crb_get_i18n_suffix(), 'Заголовок для категории №3' ),
       Field::make( 'text', 'crb_main_cat_three_link' . crb_get_i18n_suffix(), 'Ссылка для категории №3' ),
-      Field::make( 'complex', 'crb_main_banners', 'Баннеры' )
+      Field::make( 'complex', 'crb_main_banners' . crb_get_i18n_suffix(), 'Баннеры' )
         ->add_fields( array(
-          Field::make( 'image', 'crb_main_banner_img', 'Картинка' ),
+          Field::make( 'image', 'crb_main_banner_img' . crb_get_i18n_suffix(), 'Картинка' ),
           Field::make( 'text', 'crb_main_banner_subtitle' . crb_get_i18n_suffix(), 'Подзаголовок' ),
           Field::make( 'text', 'crb_main_banner_title' . crb_get_i18n_suffix(), 'Заголовок' ),
           Field::make( 'text', 'crb_main_banner_link' . crb_get_i18n_suffix(), 'Ссылка' ),
