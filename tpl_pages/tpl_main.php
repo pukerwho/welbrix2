@@ -24,21 +24,69 @@ Template Name: ГЛАВНАЯ
 			</div>
 			<div class="w-full md:w-1/2 px-0 md:px-4">
 				<div class="flex flex-wrap">
+					<!-- Категория №1 -->
 					<div class="welcome_cat w-full md:w-1/2 flex items-center justify-center relative">
-						<a href="#"></a>
-						<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/spot.jpg">
-						<span class="uppercase bg-white text-center text-dark-blue rounded-lg px-6 py-3">Споты</span>
+						<a href="<?php echo crb_get_i18n_theme_option( 'crb_main_cat_one_link' ); ?>"></a>
+						<!-- PHOTO -->
+						<?php 
+							$cat_one_src_medium = wp_get_attachment_image_src(carbon_get_theme_option('crb_main_cat_one_thumb'), 'medium'); 
+							$cat_one_src_large = wp_get_attachment_image_src(carbon_get_theme_option('crb_main_cat_one_thumb'), 'large'); 
+							$cat_one_src_full = wp_get_attachment_image_src(carbon_get_theme_option('crb_main_cat_one_thumb'), 'full'); 
+						?>
+						<img srcset="<?php echo $cat_one_src_medium[0] ?> 767w, 
+						<?php echo $cat_one_src_large[0] ?> 1280w,
+						<?php echo $cat_one_src_full[0] ?> 1440w"
+						sizes="(max-width: 767px) 767px,
+            (max-width: 1280px) 1280px,
+            1440px"
+						src="<?php echo $cat_one_src_full[0] ?>" alt="" loading="lazy">
+						<!-- END PHOTO -->
+						<span class="uppercase bg-white text-center text-dark-blue rounded-lg px-6 py-3"><?php echo crb_get_i18n_theme_option( 'crb_main_cat_one_title' ); ?></span>
 					</div>
+					<!-- END Категория №1 -->
+
+					<!-- Категория №2 -->
 					<div class="welcome_cat w-full md:w-1/2 flex items-center justify-center relative">
-						<a href="#"></a>
-						<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/tochecno.jpg">
-						<span class="uppercase bg-white text-center text-dark-blue rounded-lg px-6 py-3">точечные светильники</span>
+						<a href="<?php echo crb_get_i18n_theme_option( 'crb_main_cat_two_link' ); ?>"></a>
+						<!-- PHOTO -->
+						<?php 
+							$cat_two_src_medium = wp_get_attachment_image_src(carbon_get_theme_option('crb_main_cat_two_thumb'), 'medium'); 
+							$cat_two_src_large = wp_get_attachment_image_src(carbon_get_theme_option('crb_main_cat_two_thumb'), 'large'); 
+							$cat_two_src_full = wp_get_attachment_image_src(carbon_get_theme_option('crb_main_cat_two_thumb'), 'full'); 
+						?>
+						<img srcset="<?php echo $cat_two_src_medium[0] ?> 767w, 
+						<?php echo $cat_two_src_large[0] ?> 1280w,
+						<?php echo $cat_two_src_full[0] ?> 1440w"
+						sizes="(max-width: 767px) 767px,
+            (max-width: 1280px) 1280px,
+            1440px"
+						src="<?php echo $cat_two_src_full[0] ?>" alt="" loading="lazy">
+						<!-- END PHOTO -->
+						<span class="uppercase bg-white text-center text-dark-blue rounded-lg px-6 py-3"><?php echo crb_get_i18n_theme_option( 'crb_main_cat_two_title' ); ?></span>
 					</div>
+					<!-- END Категория №2 -->
+
+					<!-- Категория №3 -->
 					<div class="welcome_cat w-full hidden md:flex items-center justify-center relative">
-						<a href="#"></a>
-						<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/led.jpg">
-						<span class="uppercase bg-white text-center text-dark-blue rounded-lg px-6 py-3">Светодиодные светильники</span>
+						<a href="<?php echo crb_get_i18n_theme_option( 'crb_main_cat_three_link' ); ?>"></a>
+						<!-- PHOTO -->
+						<?php 
+							$cat_three_src_medium = wp_get_attachment_image_src(carbon_get_theme_option('crb_main_cat_three_thumb'), 'medium'); 
+							$cat_three_src_large = wp_get_attachment_image_src(carbon_get_theme_option('crb_main_cat_three_thumb'), 'large'); 
+							$cat_three_src_full = wp_get_attachment_image_src(carbon_get_theme_option('crb_main_cat_three_thumb'), 'full'); 
+						?>
+						<img srcset="<?php echo $cat_three_src_medium[0] ?> 767w, 
+						<?php echo $cat_three_src_large[0] ?> 1280w,
+						<?php echo $cat_three_src_full[0] ?> 1440w"
+						sizes="(max-width: 767px) 767px,
+            (max-width: 1280px) 1280px,
+            1440px"
+						src="<?php echo $cat_three_src_full[0] ?>" alt="" loading="lazy">
+						<!-- END PHOTO -->
+						<span class="uppercase bg-white text-center text-dark-blue rounded-lg px-6 py-3"><?php echo crb_get_i18n_theme_option( 'crb_main_cat_three_title' ); ?></span>
 					</div>
+					<!-- END Категория №3 -->
+
 				</div>
 			</div>
 		</div>

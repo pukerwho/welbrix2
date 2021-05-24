@@ -8,6 +8,18 @@ function crb_attach_theme_options() {
   Container::make( 'theme_options', __('Welbrix') )
   	->add_tab( __('Главная страница'), array(
   		Field::make( 'rich_text', 'crb_main_text' . crb_get_i18n_suffix(), 'Текст на странице' ),
+      
+      Field::make( 'image', 'crb_main_cat_one_thumb', 'Картинка для категории №1' ),
+      Field::make( 'text', 'crb_main_cat_one_title' . crb_get_i18n_suffix(), 'Заголовок для категории №1' ),
+      Field::make( 'text', 'crb_main_cat_one_link' . crb_get_i18n_suffix(), 'Ссылка для категории №1' ),
+
+      Field::make( 'image', 'crb_main_cat_two_thumb', 'Картинка для категории №2' ),
+      Field::make( 'text', 'crb_main_cat_two_title' . crb_get_i18n_suffix(), 'Заголовок для категории №2' ),
+      Field::make( 'text', 'crb_main_cat_two_link' . crb_get_i18n_suffix(), 'Ссылка для категории №2' ),
+
+      Field::make( 'image', 'crb_main_cat_three_thumb', 'Картинка для категории №3' ),
+      Field::make( 'text', 'crb_main_cat_three_title' . crb_get_i18n_suffix(), 'Заголовок для категории №3' ),
+      Field::make( 'text', 'crb_main_cat_three_link' . crb_get_i18n_suffix(), 'Ссылка для категории №3' ),
     ))
     ->add_tab( __('Контакты'), array(
       Field::make( 'text', 'crb_contact_address' . crb_get_i18n_suffix(), 'Адрес' ),
