@@ -158,7 +158,7 @@
 <div class="modal-bg"></div>
 
 <?php wp_footer(); ?>
-<!-- <script type="text/javascript">
+<script type="text/javascript">
   var ZCallbackWidgetLinkId  = '064fc9bb4c7407d2bbbc45f5440e2f9a';
   var ZCallbackWidgetDomain  = 'my.zadarma.com';
   (function(){
@@ -171,6 +171,6 @@
       if (sc) sc.parentNode.insertBefore(lt, sc);
       else document.documentElement.firstChild.appendChild(lt);
   })();
-</script> -->
+</script>
 </body>
 </html>
