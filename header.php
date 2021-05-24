@@ -12,71 +12,73 @@
   ?>
 </head>
 <body <?php echo body_class(); ?>>
-  <header id="header" class="header" role="banner">
-    <div class="header_top hidden md:block bg-white">
-      <div class="container mx-auto px-4 md:px-0">
-        <div class="flex justify-between items-center">
-          <div class="header_top_menu">
-            <?php wp_nav_menu([
-              'theme_location' => 'top_header',
-              'container' => 'ul',
-              'menu_class' => 'flex',
-            ]); ?>  
-          </div>
-          <div class="flex items-center">
-            <div class="flex items-center mr-6">
-              <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/icons/phone-icon.svg" class="mr-2">
-              <?php $phones = carbon_get_theme_option('crb_contact_phones');
-              foreach (array_slice($phones, 0, 1) as $phone): ?>
-                <a href="tel:<?php echo $phone['crb_contact_phone']; ?>"><?php echo $phone['crb_contact_phone']; ?></a>
-              <?php endforeach; ?>
-            </div>
-            <div class="flex items-center mr-6">
-              <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/icons/clock-icon.svg" class="mr-2">
-              <span><?php _e('Без выходных 24/7', 'welbrix'); ?></span>
-            </div>
-            <div class="lang">
+  <header id="header" class="header sticky top-0 z-10" role="banner">
+    <div>
+      <div class="header_top hidden md:block bg-white">
+        <div class="container mx-auto px-4 md:px-0">
+          <div class="flex justify-between items-center">
+            <div class="header_top_menu">
               <?php wp_nav_menu([
-                'theme_location' => 'lang_header',
-                'container' => 'div',
+                'theme_location' => 'top_header',
+                'container' => 'ul',
                 'menu_class' => 'flex',
-              ]); ?> 
+              ]); ?>  
+            </div>
+            <div class="flex items-center">
+              <div class="flex items-center mr-6">
+                <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/icons/phone-icon.svg" class="mr-2">
+                <?php $phones = carbon_get_theme_option('crb_contact_phones');
+                foreach (array_slice($phones, 0, 1) as $phone): ?>
+                  <a href="tel:<?php echo $phone['crb_contact_phone']; ?>"><?php echo $phone['crb_contact_phone']; ?></a>
+                <?php endforeach; ?>
+              </div>
+              <div class="flex items-center mr-6">
+                <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/icons/clock-icon.svg" class="mr-2">
+                <span><?php _e('Без выходных 24/7', 'welbrix'); ?></span>
+              </div>
+              <div class="lang">
+                <?php wp_nav_menu([
+                  'theme_location' => 'lang_header',
+                  'container' => 'div',
+                  'menu_class' => 'flex',
+                ]); ?> 
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="header_bottom">
-      <div class="container mx-auto px-4 md:px-0">
-        <div class="flex justify-between items-center">
-          <div class="logo">
-            <a href="<?php echo home_url(); ?>">
-              <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/icons/logo.svg" alt="Лого">
-            </a>
-          </div>
-          <div class="header_toggle md:hidden">
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
-          <div class="hidden md:flex items-center">
-            <div class="header_bottom_menu">
-              <?php wp_nav_menu([
-                'theme_location' => 'bottom_header',
-                'container' => 'ul',
-                'menu_class' => 'flex',
-              ]); ?> 
+      <div class="header_bottom">
+        <div class="container mx-auto px-4 md:px-0">
+          <div class="flex justify-between items-center">
+            <div class="logo">
+              <a href="<?php echo home_url(); ?>">
+                <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/icons/logo.svg" alt="Лого">
+              </a>
             </div>
-            <div class="flex items-center">
-              <div class="header_bottom_icon">
-                <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/icons/search-icon.svg">  
+            <div class="header_toggle md:hidden">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <div class="hidden md:flex items-center">
+              <div class="header_bottom_menu">
+                <?php wp_nav_menu([
+                  'theme_location' => 'bottom_header',
+                  'container' => 'ul',
+                  'menu_class' => 'flex',
+                ]); ?> 
               </div>
-              <div class="header_bottom_icon">
-                <a href="<?php echo home_url(); ?>/wishlist">
-                  <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/icons/fav-icon.svg">
-                </a>
+              <div class="flex items-center">
+                <div class="header_bottom_icon">
+                  <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/icons/search-icon.svg">  
+                </div>
+                <div class="header_bottom_icon">
+                  <a href="<?php echo home_url(); ?>/wishlist">
+                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/icons/fav-icon.svg">
+                  </a>
+                </div>
+                <!-- get_template_part('components/header/cart-header') -->
               </div>
-              <!-- get_template_part('components/header/cart-header') -->
             </div>
           </div>
         </div>
