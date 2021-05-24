@@ -122,7 +122,55 @@
 		</div>
 	</div>
 </div>
-<?php wp_footer(); ?>
 
+<!-- MODALS -->
+
+<!-- ORDER MODAL -->
+<div class="modal" data-modal="order">
+  <div class="modal_content">
+    <div class="modal_content_close">
+      ✖️
+    </div>
+    <div class="text-xl mb-5">
+      <?php _e('Купить', 'welbrix'); ?>: <?php the_title(); ?>
+    </div>
+    <div>
+      <!-- ФОРМА -->
+      <form name="form_order">
+        <input type="email" name="Email" placeholder="<?php _e('Email', 'treba'); ?>" class="w-full px-2 py-4 mb-4 rounded border-custom-blue" required>
+        <input type="tel" name="Телефон" placeholder="<?php _e('Телефон', 'treba'); ?>" class="w-full text-black px-2 py-4 mb-4 rounded border-custom-blue">
+        <textarea name="Сообщение" rows="5" class="w-full text-black px-2 py-4 mb-4 rounded border-custom-blue" placeholder="<?php _e('Примечания', 'treba'); ?>"></textarea>
+        <input type="hidden" name="Cтраница" value="<?php echo get_the_permalink(); ?>">
+        <input type="hidden" name="Товар" value="<?php the_title(); ?>">
+        <button type="submit" class="form_submit flex">
+          <?php _e('Отправить', 'treba'); ?>
+        </button>
+      </form>
+      <div class="success_order hidden bg-green-700 px-2 py-4 mt-4">
+        👌 <?php _e('Отлично, мы получили Вашу заявку. В ближайшее время с Вами свяжется наш менеджер', 'treba'); ?>. 
+      </div>
+      <!-- END ФОРМА -->
+    </div>
+  </div>
+</div>
+<!-- END ORDER MODAL -->
+
+<div class="modal-bg"></div>
+
+<?php wp_footer(); ?>
+<script type="text/javascript">
+  var ZCallbackWidgetLinkId  = '064fc9bb4c7407d2bbbc45f5440e2f9a';
+  var ZCallbackWidgetDomain  = 'my.zadarma.com';
+  (function(){
+      var lt = document.createElement('script');
+      lt.type ='text/javascript';
+      lt.charset = 'utf-8';
+      lt.async = true;
+      lt.src = 'https://' + ZCallbackWidgetDomain + '/callbackWidget/js/main.min.js';
+      var sc = document.getElementsByTagName('script')[0];
+      if (sc) sc.parentNode.insertBefore(lt, sc);
+      else document.documentElement.firstChild.appendChild(lt);
+  })();
+</script>
 </body>
 </html>

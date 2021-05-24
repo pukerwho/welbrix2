@@ -4,6 +4,51 @@ $('.header_toggle').on('click', function(){
   $('body').toggleClass('overflow-hidden');
   $('.mobile-menu').toggleClass('show');
 })
+
+//MODALS
+function openModal(attrModal) {
+  $('.modal[data-modal='+attrModal+']').addClass('open');
+  $('.modal-bg').addClass('open');
+}
+
+function closeModal(attrModal) {
+  $('.modal').removeClass('open');
+  $('.modal-bg').removeClass('open');
+}
+
+$('.modal-js').on('click', function(e){
+  var clickModalData = $(this).data('modal');
+  openModal(clickModalData);
+});
+
+$('.modal_content_close').on('click', function(){
+  closeModal();
+});
+
+document.addEventListener('click', function(e){
+  if(e.target.classList.value === 'modal open') {
+    closeModal();
+  }
+});
+
+//FORMS 
+const modalScriptURL = 'https://script.google.com/macros/s/AKfycbydrT2l5-FGeVVKk1w94v2DgK4-BthObTP_CcmTei-6iRf6u6vai0KytEvwUJ-iuCg5mg/exec'
+const form_order = document.forms['form_order']
+if (form_order) {
+  form_order.addEventListener('submit', e => {
+    e.preventDefault()
+    let this_form = form_order
+    let data = new FormData(form_order)
+    fetch(modalScriptURL, { method: 'POST', mode: 'cors', body: data})
+      .then(response => showSuccessMessage(data, this_form))
+      .catch(error => console.error('Error!', error.message))
+  })  
+}
+
+function showSuccessMessage(data, this_form) {
+  this_form.reset();
+  $('.success_order').removeClass('hidden');
+}
 /*!
  * Lightbox v2.10.0
  * by Lokesh Dhakar
