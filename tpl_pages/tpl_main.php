@@ -138,6 +138,7 @@ Template Name: ГЛАВНАЯ
 					<?php 
 						$product_categories = get_categories( array(
 					    'taxonomy'     => 'product_cat',
+					    'orderby' => 'term_order',
 						) );
 					?>
 					<!-- END ПОЛУЧАЕМ КАТЕГОРИИ -->
