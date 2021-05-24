@@ -243,7 +243,8 @@ Template Name: ГЛАВНАЯ
 	<div class="container mx-auto px-4 md:px-0">
 		<div class="w-full lg:w-10/12 mx-auto">
 			<div class="content">
-				<?php echo apply_filters( 'the_content', carbon_get_theme_option('crb_main_text') ); ?>	
+				<?php $main_text = crb_get_i18n_theme_option( 'crb_main_text' ); ?>
+				<?php echo apply_filters( 'the_content', $main_text  ); ?>	
 			</div>	
 		</div>
 		
