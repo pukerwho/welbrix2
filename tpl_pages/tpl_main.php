@@ -277,7 +277,7 @@ Template Name: ГЛАВНАЯ
 <!-- END Баннеры -->
 
 <!-- ТЕКСТ НА ГЛАВНОЙ -->
-<div class="mb-20 md:mb-40">
+<div class="mb-20">
 	<div class="container mx-auto px-4 md:px-0">
 		<div class="w-full lg:w-10/12 mx-auto">
 			<div class="content">
