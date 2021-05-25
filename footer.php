@@ -65,13 +65,28 @@
   		<!-- ПОЛЕЗНЫЕ ССЫЛКИ -->
   		<div class="w-full md:w-1/3 lg:w-1/4 px-4">
   			<div class="footer_subtitle mb-5">
-  				<?php _e('Полезные ссылки', 'welbrix'); ?>
+  				<?php _e('Популярные товары', 'welbrix'); ?>
   			</div>
   			<div>
-  				<?php wp_nav_menu([
-            'theme_location' => 'footer_links',
-            'container' => 'ul',
-          ]); ?>  
+  				<?php 
+            $query = new WP_Query( array( 
+              'post_type' => 'product', 
+              'posts_per_page' => 4,
+              'order'    => 'DESC',
+            ) );
+          if ($query->have_posts()) : while ($query->have_posts()) : $query->the_post(); ?> 
+            <div class="relative mb-4">
+              <a href="<?php the_permalink(); ?>" class="w-full h-full absolute left-0 top-0 z-10"></a>
+              <div class="flex">
+                <div class="w-1/3 mr-2">
+                  <?php echo woocommerce_get_product_thumbnail('thumb'); ?>
+                </div>  
+                <div class="w-2/3 text-sm">
+                  <?php the_title(); ?>
+                </div>
+              </div>
+            </div>
+          <?php endwhile; endif; wp_reset_postdata(); ?>
   			</div>
   		</div>
   		<!-- END ПОЛЕЗНЫЕ ССЫЛКИ -->
