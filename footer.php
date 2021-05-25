@@ -34,48 +34,21 @@
 <footer id="footer" class="footer hidden md:block bg-white py-10">
   <div class="container mx-auto">
   	<div class="flex flex-wrap -mx-4">
-  		<!-- КАТЕГОРИИ -->
-  		<div class="w-full md:w-1/3 lg:w-1/4 px-4">
-  			<div class="footer_subtitle mb-5">
-  				<?php _e('Категории', 'welbrix'); ?>
-  			</div>
-  			<div>
-  				<?php wp_nav_menu([
-            'theme_location' => 'footer_cat',
-            'container' => 'ul',
-          ]); ?>  
-  			</div>
-  		</div>
-  		<!-- END КАТЕГОРИИ -->
 
-  		<!-- ИНФОРМАЦИЯ -->
-  		<div class="w-full md:w-1/3 lg:w-1/4 px-4">
-  			<div class="footer_subtitle mb-5">
-  				<?php _e('Информация', 'welbrix'); ?>
-  			</div>
-  			<div>
-  				<?php wp_nav_menu([
-            'theme_location' => 'footer_info',
-            'container' => 'ul',
-          ]); ?>  
-  			</div>
-  		</div>
-  		<!-- END ИНФОРМАЦИЯ -->
-
-  		<!-- ПОЛЕЗНЫЕ ССЫЛКИ -->
-  		<div class="w-full md:w-1/3 lg:w-1/4 px-4">
-  			<div class="footer_subtitle mb-5">
-  				<?php _e('Популярные товары', 'welbrix'); ?>
-  			</div>
-  			<div>
-  				<?php 
+      <!-- Популярные товары -->
+      <div class="w-full md:w-6/12 px-4">
+        <div class="footer_subtitle mb-5">
+          <?php _e('Популярные товары', 'welbrix'); ?>
+        </div>
+        <div class="flex flex-wrap md:-mx-2">
+          <?php 
             $query = new WP_Query( array( 
               'post_type' => 'product', 
-              'posts_per_page' => 4,
+              'posts_per_page' => 6,
               'order'    => 'DESC',
             ) );
           if ($query->have_posts()) : while ($query->have_posts()) : $query->the_post(); ?> 
-            <div class="relative mb-4">
+            <div class="w-full md:w-1/2 relative mb-4 md:px-2">
               <a href="<?php the_permalink(); ?>" class="w-full h-full absolute left-0 top-0 z-10"></a>
               <div class="flex">
                 <div class="w-1/3 mr-2">
@@ -87,12 +60,27 @@
               </div>
             </div>
           <?php endwhile; endif; wp_reset_postdata(); ?>
+        </div>
+      </div>
+      <!-- END Популярные товары -->
+
+
+  		<!-- ПОЛЕЗНЫЕ ССЫЛКИ -->
+  		<div class="w-full md:w-3/12 px-4">
+  			<div class="footer_subtitle mb-5">
+  				<?php _e('Полезные ссылки', 'welbrix'); ?>
+  			</div>
+  			<div>
+  				<?php wp_nav_menu([
+            'theme_location' => 'footer_links',
+            'container' => 'ul',
+          ]); ?>  
   			</div>
   		</div>
   		<!-- END ПОЛЕЗНЫЕ ССЫЛКИ -->
 
   		<!-- КОНТАКТЫ -->
-  		<div class="w-full md:w-1/3 lg:w-1/4 px-4">
+  		<div class="w-full md:w-3/12 px-4">
   			<div class="footer_subtitle mb-5">
   				<?php _e('Контакты', 'welbrix'); ?>
   			</div>
