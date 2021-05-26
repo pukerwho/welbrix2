@@ -34,7 +34,7 @@
               </div>
               <div class="flex items-center mr-6">
                 <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/icons/clock-icon.svg" class="mr-2">
-                <span><?php _e('Без выходных 24/7', 'welbrix'); ?></span>
+                <span><?php _e('Пн-Сб с 9:00 до 18:00', 'welbrix'); ?></span>
               </div>
               <div class="lang">
                 <?php wp_nav_menu([
@@ -77,7 +77,20 @@
                     <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/icons/fav-icon.svg">
                   </a>
                 </div>
-                <!-- get_template_part('components/header/cart-header') -->
+                <div class="header_bottom_icon cart">
+                  <a href="<?php echo wc_get_cart_url(); ?>">
+                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/icons/cart-icon.svg">
+                    <?php 
+                      global $woocommerce;
+                      $count = $woocommerce->cart->cart_contents_count;
+                      if ($count != 0) {
+                        echo '<span>';
+                        echo $count;  
+                        echo '</span>';
+                      }
+                    ?>
+                  </a>
+                </div>
               </div>
             </div>
           </div>

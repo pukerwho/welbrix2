@@ -59,6 +59,16 @@ function truemisha_default_checkout_country( $country ) {
 	return 'UA';
 }
 
+add_filter('woocommerce_cart_needs_payment', 'disabled_payment');
+function disabled_payment () {
+	return false;
+}
+
+add_filter('woocommerce_cart_needs_shipping', 'disabled_shipping');
+function disabled_shipping () {
+	return false;
+}
+
 // Change the Number of WooCommerce Products Displayed Per Page
 add_filter( 'loop_shop_per_page', 'lw_loop_shop_per_page', 30 );
 function lw_loop_shop_per_page( $products ) {

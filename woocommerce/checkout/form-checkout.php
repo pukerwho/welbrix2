@@ -39,35 +39,16 @@ if ( ! $checkout->is_registration_enabled() && $checkout->is_registration_requir
 				<!-- END Контактные данные -->
 
 				<!-- Доставка -->
-				<div class="checkout_box bg-white rounded mb-8 p-5">
-					<h2 class="normal-case mb-12">2. <?php _e('Доставка', 'welbrix'); ?></h2>
-					<div class="op">
-						<?php if ( WC()->cart->needs_shipping() && WC()->cart->show_shipping() ) : ?>
-
-							<?php do_action( 'woocommerce_review_order_before_shipping' ); ?>
-							<?php wc_cart_totals_shipping_html(); ?>
-							<?php do_action( 'woocommerce_review_order_after_shipping' ); ?>
-
-						<?php endif; ?>
-
-						<?php do_action( 'woocommerce_checkout_shipping' ); ?>
-						
-					</div>
-				</div>
+				<!-- component/checkout/delivery -->				
 				<!-- END Доставка -->
 
 				<!-- Оплата -->
-				<div class="checkout_box bg-white rounded mb-8 p-5">
-					<h2 class="normal-case mb-12">3. <?php _e('Оплата', 'welbrix'); ?></h2>
-					<div>
-						
-						<?php woocommerce_checkout_payment(); ?>
-					</div>
-				</div>
+				<!-- component/checkout/payment -->
 				<!-- END Оплата -->
-
-				<div class="btn_blue px-6 py-4">
-					Оформить заказ
+				<div>
+					<?php echo apply_filters( 'woocommerce_order_button_html', '<button type="submit" class="btn_blue w-full uppercase px-6 py-4" name="woocommerce_checkout_place_order" id="place_order" value="' . esc_attr__( 'Подтвердить заказ', 'welbrix' ) . '" data-value="' . esc_attr__( 'Подтвердить заказ', 'welbrix' ) . '">' . esc_html__( 'Подтвердить заказ', 'welbrix' ) . '</button>' ); // @codingStandardsIgnoreLine ?>
+				<?php do_action( 'woocommerce_review_order_after_submit' ); ?>
+				<?php wp_nonce_field( 'woocommerce-process_checkout', 'woocommerce-process-checkout-nonce' ); ?>
 				</div>
 
 			</div>
