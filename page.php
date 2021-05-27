@@ -17,7 +17,7 @@
 		</div>
 	</div>
 	<div class="container mx-auto px-4 md:px-6 lg:px-0 py-12">
-		<div class="w-full">
+		<div class="w-full content">
 			<?php the_content(); ?>
 		</div>
 	</div>
