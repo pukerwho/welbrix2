@@ -6,9 +6,9 @@ function truemisha_del_fields( $fields ) {
 	// оставляем эти поля
 	// unset( $fields[ 'billing' ][ 'billing_first_name' ] ); // имя
 	// unset( $fields[ 'billing' ][ 'billing_phone' ] ); // телефон
-	// unset( $fields[ 'billing' ][ 'billing_email' ] ); // емайл
  
 	// удаляем все эти поля
+	unset( $fields[ 'billing' ][ 'billing_email' ] ); // емайл
 	unset( $fields[ 'billing' ][ 'billing_last_name' ] ); // фамилия
 	unset( $fields[ 'billing' ][ 'billing_company' ] ); // компания
 	unset( $fields[ 'billing' ][ 'billing_country' ] ); // страна

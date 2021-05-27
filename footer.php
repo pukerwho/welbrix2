@@ -19,14 +19,14 @@
           </div>
         </form>
       </div>
-      <div class="social hidden md:block opacity-75">
+      <!-- <div class="social hidden md:block opacity-75">
         <ul class="flex items-center -mx-3">
-          <li class="pr-3"><a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/icons/facebook-icon.svg"></a></li>
-          <li class="pr-3"><a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/icons/twitter-icon.svg" alt=""></a></li>
-          <li class="pr-3"><a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/icons/instagram-icon.svg" alt=""></a></li>
-          <li class="pr-3"><a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/icons/pinterest-icon.svg" alt=""></a></li>
+          <li class="pr-3"><a href="#"><img src="/img/icons/facebook-icon.svg"></a></li>
+          <li class="pr-3"><a href="#"><img src="/img/icons/twitter-icon.svg" alt=""></a></li>
+          <li class="pr-3"><a href="#"><img src="echo get_stylesheet_directory_uri(); /img/icons/instagram-icon.svg" alt=""></a></li>
+          <li class="pr-3"><a href="#"><img src="echo get_stylesheet_directory_uri();/img/icons/pinterest-icon.svg" alt=""></a></li>
         </ul>
-      </div>
+      </div> -->
     </div> 
   </div>
 </div>

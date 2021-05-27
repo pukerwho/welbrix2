@@ -63842,6 +63842,12 @@ h2 {
     -o-transition: transform 0.35s;
     transition: transform 0.35s;
     transition: transform 0.35s, -webkit-transform 0.35s; }
+    @media (max-width: 767px) {
+      .product_card_actions {
+        position: relative;
+        -webkit-transform: translateY(0);
+        -ms-transform: translateY(0);
+        transform: translateY(0); } }
     .product_card_actions_add {
       height: 40px;
       font-style: normal;

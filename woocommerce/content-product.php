@@ -14,14 +14,14 @@
 		<div class="product_card_thumb pt-4 md:pt-2">
 			<?php echo $product->get_image(); ?>
 		</div>
-		<div class="px-4 py-3">
-			<div class="product_card_id mb-2">
+		<div class="py-3 pb-0 md:pb-3">
+			<div class="product_card_id px-4 mb-2">
 				<?php _e('Код', 'welbrix'); ?>: <?php echo $product->get_sku(); ?>
 			</div>
-			<div class="product_card_title mb-8">
+			<div class="product_card_title px-4 mb-8">
 				<?php the_title(); ?>
 			</div>
-			<div class="product_card_price">
+			<div class="product_card_price mb-4 md:mb-0 px-4">
 				<?php echo $product->get_price_html(); ?>
 			</div>
 			<div class="product_card_actions flex justify-between items-center">
@@ -39,7 +39,7 @@
 						$product );
 					?>
 					<!-- <div class="inline-block cursor-pointer px-8 py-3 modal-js" data-modal="order" data-title="the_title();">
-						 _e('Купить', 'welbrix');	
+						_e('Купить', 'welbrix');
 					</div> -->
 				</div>
 				<div class="product_card_actions_icons flex items-center">
