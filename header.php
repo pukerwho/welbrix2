@@ -14,18 +14,18 @@
 <body <?php echo body_class(); ?>>
   <header id="header" class="header sticky top-0 z-10" role="banner">
     <div>
-      <div class="header_top hidden md:block bg-white">
+      <div class="header_top block bg-white">
         <div class="container mx-auto px-4 md:px-0">
           <div class="flex justify-between items-center">
-            <div class="header_top_menu">
+            <div class="hidden md:block header_top_menu">
               <?php wp_nav_menu([
                 'theme_location' => 'top_header',
                 'container' => 'ul',
                 'menu_class' => 'flex',
               ]); ?>  
             </div>
-            <div class="flex items-center">
-              <div class="flex items-center mr-6">
+            <div class="w-full md:w-auto flex justify-between md:justify-start items-center">
+              <div class="hidden md:flex items-center mr-6">
                 <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/icons/phone-icon.svg" class="mr-2">
                 <?php $phones = carbon_get_theme_option('crb_contact_phones');
                 foreach (array_slice($phones, 0, 1) as $phone): ?>
@@ -54,6 +54,22 @@
               <a href="<?php echo home_url(); ?>">
                 <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/icons/logo.svg" alt="Лого">
               </a>
+            </div>
+            <div class="block md:hidden">
+              <div class="header_bottom_icon cart">
+                <a href="<?php echo wc_get_cart_url(); ?>">
+                  <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/icons/cart-icon.svg">
+                  <?php 
+                    global $woocommerce;
+                    $count = $woocommerce->cart->cart_contents_count;
+                    if ($count != 0) {
+                      echo '<span>';
+                      echo $count;  
+                      echo '</span>';
+                    }
+                  ?>
+                </a>
+              </div>
             </div>
             <div class="header_toggle md:hidden">
               <span></span>

@@ -85,10 +85,10 @@
   				<?php _e('Контакты', 'welbrix'); ?>
   			</div>
   			<div>
-  				<li class="flex items-start">
-						<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/icons/location-icon.svg" class="mr-2">
-						<span><?php echo crb_get_i18n_theme_option( 'crb_contact_address' ); ?></span>
-  				</li>
+  				<!-- <li class="flex items-start">
+						<img src=" echo get_stylesheet_directory_uri(); /img/icons/location-icon.svg" class="mr-2">
+						<span> echo crb_get_i18n_theme_option( 'crb_contact_address' ); </span>
+  				</li> -->
   				<li class="flex items-start">
 						<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/icons/phone-transparent-icon.svg" class="mr-2">
 						<div class="flex flex-col">
