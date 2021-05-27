@@ -52,10 +52,10 @@ Template Name: КОНТАКТЫ
 					<!-- ФОРМА -->
 		      <form name="form_contact">
 		      	<div class="flex flex-wrap md:-mx-2 mb-4">
-		      		<div class="w-full md:w-1/2 px-2 mb-4 md:mb-0">
+		      		<div class="w-full md:w-1/2 md:px-2 mb-4 md:mb-0">
 			      		<input type="email" name="Email" placeholder="<?php _e('Email', 'welbrix'); ?>" class="w-full text-sm rounded border-custom-blue py-4 px-2" required>	
 		      		</div>
-			      	<div class="w-full md:w-1/2 px-2">
+			      	<div class="w-full md:w-1/2 md:px-2">
 				      	<input type="tel" name="Телефон" placeholder="<?php _e('Телефон', 'welbrix'); ?>" class="w-full text-sm rounded border-custom-blue px-2 py-4">		
 			      	</div>
 		      	</div>

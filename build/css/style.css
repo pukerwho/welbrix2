@@ -63203,6 +63203,9 @@ h2 {
     .header_bottom_icon.cart {
       position: relative;
       margin-right: 0; }
+      @media (max-width: 767px) {
+        .header_bottom_icon.cart {
+          margin-right: 20px; } }
       .header_bottom_icon.cart span {
         width: 14px;
         height: 11px;

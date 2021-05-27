@@ -56,7 +56,7 @@
               </a>
             </div>
             <div class="flex items-center md:hidden">
-              <div class="header_bottom_icon mr-6">
+              <div class="header_bottom_icon cart">
                 <a href="<?php echo wc_get_cart_url(); ?>">
                   <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/icons/cart-icon.svg">
                   <?php 
