@@ -55,8 +55,8 @@
                 <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/icons/logo.svg" alt="Лого">
               </a>
             </div>
-            <div class="block md:hidden">
-              <div class="header_bottom_icon cart">
+            <div class="flex items-center md:hidden">
+              <div class="header_bottom_icon mr-6">
                 <a href="<?php echo wc_get_cart_url(); ?>">
                   <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/icons/cart-icon.svg">
                   <?php 
@@ -70,11 +70,11 @@
                   ?>
                 </a>
               </div>
-            </div>
-            <div class="header_toggle md:hidden">
-              <span></span>
-              <span></span>
-              <span></span>
+              <div class="header_toggle md:hidden">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
             </div>
             <div class="hidden md:flex items-center">
               <div class="header_bottom_menu">
