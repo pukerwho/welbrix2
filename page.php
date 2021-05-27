@@ -7,7 +7,7 @@
 			<div class="flex flex-col py-4">
 				<!-- Хлебные крошки -->
 				<div>
-					<?php get_template_part('components/breadcrumbs/archive'); ?>
+					<?php get_template_part('components/breadcrumbs/page'); ?>
 				</div>
 				<!-- END Хлебные крошки -->
 				<div>

@@ -13,7 +13,7 @@ Template Name: КОНТАКТЫ
 			<div class="flex flex-col py-4">
 				<!-- Хлебные крошки -->
 				<div>
-					<?php get_template_part('components/breadcrumbs/archive'); ?>
+					<?php get_template_part('components/breadcrumbs/page'); ?>
 				</div>
 				<!-- END Хлебные крошки -->
 				<div>
@@ -65,7 +65,7 @@ Template Name: КОНТАКТЫ
 		        </button>	
 		      </form>
 		      <div class="success_contact hidden bg-green-500 px-2 py-4 mt-4">
-		        👌 <?php _e('Отлично, мы получили Вашу заявку. В ближайшее время с Вами свяжется наш менеджер', 'welbrix'); ?>. 
+		        👌 <?php _e('Отлично, мы получили Ваше сообщение. В ближайшее время с Вами свяжется наш менеджер', 'welbrix'); ?>. 
 		      </div>
 		      <!-- END ФОРМА -->
 				</div>

@@ -51,6 +51,23 @@ function showSuccessMessage(data, this_form) {
   this_form.reset();
   $('.success_order').removeClass('hidden');
 }
+
+const form_contact = document.forms['form_contact']
+if (form_contact) {
+  form_contact.addEventListener('submit', e => {
+    e.preventDefault()
+    let this_form = form_contact
+    let data = new FormData(form_contact)
+    fetch(modalScriptURL, { method: 'POST', mode: 'cors', body: data})
+      .then(response => showSuccessContactMessage(data, this_form))
+      .catch(error => console.error('Error!', error.message))
+  })  
+}
+
+function showSuccessContactMessage(data, this_form) {
+  this_form.reset();
+  $('.success_contact').removeClass('hidden');
+}
 /*!
  * Lightbox v2.10.0
  * by Lokesh Dhakar

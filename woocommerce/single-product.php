@@ -13,9 +13,34 @@
 		<div class="container mx-auto px-4 md:px-0">
 			<div class="flex flex-col py-4">
 				<!-- Хлебные крошки -->
-				<div>
-					<?php get_template_part('components/breadcrumbs/single-product'); ?>
+				<?php 
+				$current_term = wp_get_post_terms(  get_the_ID() , 'product_cat', array( 'parent' => 0 ) );
+				foreach (array_slice($current_term, 0,1) as $myterm); {
+				} ?>
+				<?php if ($myterm): ?>
+				<div class="breadcrumbs" itemprop="breadcrumb" itemscope itemtype="http://schema.org/BreadcrumbList">
+				  <ul class="flex">
+						<li itemprop='itemListElement' itemscope itemtype='http://schema.org/ListItem'>
+							<a itemprop="item" href="<?php echo home_url(); ?>" class="breadcrumbs_home">
+								<span itemprop="name"><?php _e( 'Главная', 'restx' ); ?></span>
+							</a>                        
+							<meta itemprop="position" content="1">
+						</li>
+						<li itemprop='itemListElement' itemscope itemtype='http://schema.org/ListItem'>
+							<a itemprop="item" href="<?php echo get_term_link($myterm->term_id, 'product_cat') ?>">
+								<span itemprop="name"><?php echo $myterm->name; ?></span>
+							</a>                        
+							<meta itemprop="position" content="2">
+						</li>
+						<li itemprop='itemListElement' itemscope itemtype='http://schema.org/ListItem'>
+							<a itemprop="item" href="<?php the_permalink(); ?>">
+								<span itemprop="name"><?php the_title(); ?></span>
+							</a>                        
+							<meta itemprop="position" content="3">
+						</li>
+				  </ul>
 				</div>
+				<?php endif; ?>
 				<!-- END Хлебные крошки -->
 				<div>
 					<h1><?php the_title(); ?></h1>

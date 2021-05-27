@@ -6,7 +6,11 @@
 		<div class="flex flex-col py-4">
 			<!-- Хлебные крошки -->
 			<div>
-				<?php get_template_part('components/breadcrumbs/archive'); ?>
+				<?php if ( is_shop() ) {
+					get_template_part('components/breadcrumbs/shop');
+				} else {
+					get_template_part('components/breadcrumbs/category');
+				} ?>
 			</div>
 			<!-- END Хлебные крошки -->
 			<div>
