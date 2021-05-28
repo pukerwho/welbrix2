@@ -117,7 +117,7 @@
   <div class="mobile-menu">
     <div class="container px-4">
       <?php wp_nav_menu([
-        'theme_location' => 'bottom_header',
+        'theme_location' => 'mobile_menu',
         'container' => 'ul',
         'menu_class' => 'flex flex-col py-5',
       ]); ?>     

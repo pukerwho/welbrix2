@@ -38,6 +38,7 @@ register_nav_menus( array(
     'footer_cat' => 'ФУТЕР (Категории)',
     'footer_info' => 'ФУТЕР (Информация)',
     'footer_links' => 'ФУТЕР (Ссылки)',
+    'mobile_menu' => 'Мобильное основное меню',
 ) );
 
 function editLoginPage() { ?>
