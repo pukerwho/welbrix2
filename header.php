@@ -10,6 +10,7 @@
   <?php
     wp_head();
   ?>
+  <?php echo carbon_get_theme_option('crb_google_analytics'); ?>
 </head>
 <body <?php echo body_class(); ?>>
   <header id="header" class="header sticky top-0 z-10" role="banner">

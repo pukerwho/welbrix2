@@ -47,6 +47,7 @@ function crb_attach_theme_options() {
       Field::make( 'text', 'crb_contact_pinterest', 'Pinterest' ),
     ) )
   ->add_tab( __('Скрипты'), array(
+    Field::make( 'textarea', 'crb_google_analytics', 'Google Analytics' )
     Field::make( 'footer_scripts', 'crb_footer_scripts', 'Скрипты в футере' )
   ));
 }
