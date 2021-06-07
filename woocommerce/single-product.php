@@ -129,7 +129,7 @@
 							</div>
 							<div class="flex items-center">
 
-								<div class="mr-6 js-analytics-add-to-cart" data-item-id="<?php echo $product->get_sku(); ?>" data-item-name="<?php the_title(); ?>" data-item-price="<?php echo $product->get_price_html(); ?>">
+								<div class="mr-6 js-analytics-add-to-cart" data-item-id="<?php echo $product->get_sku(); ?>" data-item-name="<?php the_title(); ?>" data-item-price="">
 									<!-- шаблон components/product/add-to-cart-signle-product -->
 									<?php 
 										echo apply_filters( 'woocommerce_loop_add_to_cart_link',

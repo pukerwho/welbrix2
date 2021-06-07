@@ -25,7 +25,7 @@
 				<?php echo $product->get_price_html(); ?>
 			</div>
 			<div class="product_card_actions flex justify-between items-center">
-				<div class="product_card_actions_add js-analytics-add-to-cart" data-item-id="<?php echo $product->get_sku(); ?>" data-item-name="<?php the_title(); ?>" data-item-price="<?php echo $product->get_price_html(); ?>">
+				<div class="product_card_actions_add js-analytics-add-to-cart" data-item-id="<?php echo $product->get_sku(); ?>" data-item-name="<?php the_title(); ?>" data-item-price="">
 					<?php 
 						echo apply_filters( 'woocommerce_loop_add_to_cart_link',
 						sprintf( '<a href="%s" rel="nofollow" data-product_id="%s" data-product_sku="%s" class="%s product_type_%s">%s</a>',
