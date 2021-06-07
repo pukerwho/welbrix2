@@ -68,6 +68,28 @@ function showSuccessContactMessage(data, this_form) {
   this_form.reset();
   $('.success_contact').removeClass('hidden');
 }
+$('.js-analytics-add-to-cart').on('click', function(){
+  var itemId = $(this).data('item-id');
+  var itemName = $(this).data('item-name');
+  var itemPrice = $(this).data('item-price');
+  console.log(itemId);
+  googleAnalyticsAddToCart(eventCategory, eventAction);
+});
+
+console.log('test');
+
+function googleAnalyticsAddToCart(itemId, itemName, itemPrice){
+  gtag('event', 'add_to_cart', {
+    currency: 'UAH',
+    items: [{
+      item_id: itemId,
+      item_name: itemName,
+      price: itemPrice,
+      currency: 'UAH',
+      quantity: 1
+    }],
+  });
+}
 /*!
  * Lightbox v2.10.0
  * by Lokesh Dhakar
