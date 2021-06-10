@@ -38,6 +38,10 @@ defined( 'ABSPATH' ) || exit;
 		</div>
 	</div>
 	<script type="text/javascript">
-		googleAnalyticsPurchase();
+		console.log('analytics');
+	  gtag('event', 'purchase', {
+	    affiliation: 'Google',
+	    currency: 'UAH',
+	  })
 	</script>
 <?php endif; ?>
