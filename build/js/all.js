@@ -73,7 +73,7 @@ $('.js-analytics-add-to-cart').on('click', function(){
   var itemName = $(this).data('item-name');
   var itemPrice = $(this).data('item-price');
   console.log(itemId);
-  googleAnalyticsAddToCart(eventCategory, eventAction);
+  googleAnalyticsAddToCart(itemId, itemName, itemPrice);
 });
 
 console.log('test');
