@@ -72,8 +72,7 @@ $('.js-analytics-add-to-cart').on('click', function(){
   var itemId = $(this).data('item-id');
   var itemName = $(this).data('item-name');
   var itemPrice = $(this).data('item-price');
-  console.log(itemId);
-  // googleAnalyticsAddToCart(itemId, itemName, itemPrice);
+  googleAnalyticsAddToCart(itemId, itemName, itemPrice);
 });
 
 function googleAnalyticsAddToCart(itemId, itemName, itemPrice){
@@ -87,6 +86,13 @@ function googleAnalyticsAddToCart(itemId, itemName, itemPrice){
       quantity: 1
     }],
   });
+}
+
+function googleAnalyticsPurchase(){
+  gtag('event', 'purchase', {
+    affiliation: 'Google',
+    currency: 'UAH',
+  })
 }
 /*!
  * Lightbox v2.10.0
