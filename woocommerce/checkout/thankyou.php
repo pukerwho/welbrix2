@@ -37,7 +37,7 @@ defined( 'ABSPATH' ) || exit;
 			</div>
 		</div>
 	</div>
-	<script>
+	<script type="text/javascript">
 		googleAnalyticsPurchase();
 	</script>
 <?php endif; ?>
