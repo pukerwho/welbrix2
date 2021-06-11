@@ -87,13 +87,6 @@ function googleAnalyticsAddToCart(itemId, itemName, itemPrice){
     }],
   });
 }
-
-function googleAnalyticsPurchase(){
-  gtag('event', 'purchase', {
-    affiliation: 'Google',
-    currency: 'UAH',
-  })
-}
 /*!
  * Lightbox v2.10.0
  * by Lokesh Dhakar

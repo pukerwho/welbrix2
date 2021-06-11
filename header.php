@@ -57,6 +57,14 @@
               </a>
             </div>
             <div class="flex items-center md:hidden">
+              <div class="header_bottom_icon">
+                <?php $phones = carbon_get_theme_option('crb_contact_phones');
+                foreach (array_slice($phones, 0, 1) as $phone): ?>
+                  <a href="tel:<?php echo $phone['crb_contact_phone']; ?>">
+                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/icons/telephone-white.svg" width="22">
+                  </a>
+                <?php endforeach; ?>
+              </div>
               <div class="header_bottom_icon cart">
                 <a href="<?php echo wc_get_cart_url(); ?>">
                   <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/icons/cart-icon.svg">
@@ -122,7 +130,17 @@
         'container' => 'ul',
         'menu_class' => 'flex flex-col py-5',
       ]); ?>     
+      <div class="phone pt-6">
+        <?php $phones = carbon_get_theme_option('crb_contact_phones');
+        foreach (array_slice($phones, 0, 1) as $phone): ?>
+          <a href="tel:<?php echo $phone['crb_contact_phone']; ?>" class="flex items-center">
+            <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/icons/phone-icon.svg" width="18" class="mr-2 -mt-1">
+            <span><?php echo $phone['crb_contact_phone']; ?></span>
+          </a>
+        <?php endforeach; ?>
+      </div>
     </div>
+
     
   </div>
   <section id="content" role="main">
