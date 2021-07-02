@@ -161,7 +161,7 @@
 							<div class="mt-3 mb-4">
 								<?php echo $product->get_short_description(); ?>
 							</div>
-							<a href="#content-single-product"><?php _e('Подробнее', 'welbrix'); ?></a>
+							<!-- <a href="#content-single-product">('Подробнее', 'welbrix');</a> -->
 						</div>
 						<!-- END Короткое описание -->
 					</div>
