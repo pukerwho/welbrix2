@@ -63746,7 +63746,11 @@ h2 {
     line-height: 18px; } }
 
 .single-product iframe {
-  width: 100%; }
+  width: 100%;
+  height: 450px; }
+  @media (max-width: 767px) {
+    .single-product iframe {
+      height: 315px; } }
 
 .product-box {
   border-radius: 10px; }
