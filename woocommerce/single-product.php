@@ -435,6 +435,19 @@
 				</div>
 			</div>
 			<!-- END ХАРАКТЕРИСТИКИ ПРОДУКТА -->
+
+			<!-- ВИДЕО ПРОДУКТА -->
+			<?php if(carbon_get_the_post_meta('product_video_iframe')): ?>
+			<div id="content-single-product" class="product-box bg-white mb-8">
+				<div class="product_content px-2 md:px-8 py-5 md:py-12">
+					<h2 class="mb-6 md:mb-8"><?php _e('Видео', 'welbrix'); ?></h2>
+					<div class="w-full lg:w-8/12 content">
+						<?php echo carbon_get_the_post_meta('product_video_iframe'); ?>
+					</div>	
+				</div>
+			</div>
+			<?php endif; ?>
+			<!-- END ВИДЕО ПРОДУКТА -->
 		</div>
 	</div>
 <?php endwhile; // end of the loop. ?>

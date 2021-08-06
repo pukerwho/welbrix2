@@ -63745,6 +63745,9 @@ h2 {
     font-size: 12px;
     line-height: 18px; } }
 
+.single-product iframe {
+  width: 100%; }
+
 .product-box {
   border-radius: 10px; }
 
