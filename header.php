@@ -94,7 +94,7 @@
                 ]); ?> 
               </div>
               <div class="flex items-center">
-                <div class="header_bottom_icon">
+                <div class="header_bottom_icon search-icon cursor-pointer modal-js" data-modal="search">
                   <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/icons/search-icon.svg">  
                 </div>
                 <div class="header_bottom_icon">
