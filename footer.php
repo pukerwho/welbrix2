@@ -84,7 +84,7 @@
   			<div class="footer_subtitle mb-5">
   				<?php _e('Контакты', 'welbrix'); ?>
   			</div>
-  			<div>
+  			<div class="mb-6">
   				<!-- <li class="flex items-start">
 						<img src=" echo get_stylesheet_directory_uri(); /img/icons/location-icon.svg" class="mr-2">
 						<span> echo crb_get_i18n_theme_option( 'crb_contact_address' ); </span>
@@ -107,6 +107,27 @@
 						<a href="mailto:<?php echo carbon_get_theme_option('crb_contact_email'); ?>"><?php echo carbon_get_theme_option('crb_contact_email'); ?></a>
   				</li>
   			</div>
+        <div class="footer_subtitle mb-5"><?php _e('Мы в соцсетях', 'welbrix'); ?></div>
+        <div class="contact_block">
+          <li class="flex items-start mb-4">
+            <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/icons/instagram-icon-stroke.svg" class="mr-2">
+            <div class="flex flex-col">
+              <a href="<?php echo carbon_get_theme_option('crb_contact_instagram'); ?>">Instagram</a>
+            </div>
+          </li>
+          <li class="flex items-start mb-4">
+            <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/icons/youtube-icon-stroke.svg" class="mr-2">
+            <div class="flex flex-col">
+              <a href="<?php echo carbon_get_theme_option('crb_contact_youtube'); ?>">Youtube</a>
+            </div>
+          </li>
+          <li class="flex items-start mb-4">
+            <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/icons/facebook-icon-stroke.svg" class="mr-2">
+            <div class="flex flex-col">
+              <a href="<?php echo carbon_get_theme_option('crb_contact_facebook'); ?>">Facebook</a>
+            </div>
+          </li>
+        </div>
   		</div>
   		<!-- END КОНТАКТЫ -->
   	</div>
