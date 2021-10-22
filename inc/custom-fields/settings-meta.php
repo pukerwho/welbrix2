@@ -43,6 +43,7 @@ function crb_attach_theme_options() {
       Field::make( 'text', 'crb_contact_email', 'Email' ),
       Field::make( 'text', 'crb_contact_facebook', 'Facebook' ),
       Field::make( 'text', 'crb_contact_instagram', 'Instagram' ),
+      Field::make( 'text', 'crb_contact_youtube', 'YouTube' ),
       Field::make( 'text', 'crb_contact_twitter', 'Twitter' ),
       Field::make( 'text', 'crb_contact_pinterest', 'Pinterest' ),
     ) )

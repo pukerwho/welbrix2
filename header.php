@@ -18,12 +18,30 @@
       <div class="header_top block bg-white">
         <div class="container mx-auto px-4 md:px-0">
           <div class="flex justify-between items-center">
-            <div class="hidden md:block header_top_menu">
-              <?php wp_nav_menu([
-                'theme_location' => 'top_header',
-                'container' => 'ul',
-                'menu_class' => 'flex',
-              ]); ?>  
+            <div class="hidden md:flex items-center header_top_menu">
+              <div class="mr-4 border-r-2">
+                <?php wp_nav_menu([
+                  'theme_location' => 'top_header',
+                  'container' => 'ul',
+                  'menu_class' => 'flex',
+                ]); ?>    
+              </div>
+              <!-- Соцсети -->
+              <ul class="flex items-center">
+                <li class="relative flex items-start mr-2">
+                  <a href="<?php echo carbon_get_theme_option('crb_contact_instagram'); ?>" class="w-full h-full absolute left-0 right-0 z-10"></a>
+                  <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/icons/instagram-icon-stroke.svg">
+                </li>
+                <li class="flex items-start mr-2">
+                  <a href="<?php echo carbon_get_theme_option('crb_contact_youtube'); ?>" class="w-full h-full absolute left-0 right-0 z-10"></a>
+                  <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/icons/youtube-icon-stroke.svg">
+                </li>
+                <li class="flex items-start">
+                  <a href="<?php echo carbon_get_theme_option('crb_contact_facebook'); ?>" class="w-full h-full absolute left-0 right-0 z-10"></a>
+                  <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/icons/facebook-icon-stroke.svg">
+                </li>
+              </ul>
+              <!-- END Соцсети -->
             </div>
             <div class="w-full md:w-auto flex justify-between md:justify-start items-center">
               <div class="hidden md:flex items-center mr-6">
@@ -130,7 +148,7 @@
         'container' => 'ul',
         'menu_class' => 'flex flex-col py-5',
       ]); ?>     
-      <div class="phone pt-6">
+      <div class="phone mb-6 pt-6">
         <?php $phones = carbon_get_theme_option('crb_contact_phones');
         foreach (array_slice($phones, 0, 1) as $phone): ?>
           <a href="tel:<?php echo $phone['crb_contact_phone']; ?>" class="flex items-center">
@@ -139,6 +157,22 @@
           </a>
         <?php endforeach; ?>
       </div>
+      <!-- Соцсети -->
+      <ul class="flex items-center">
+        <li class="relative flex items-start mr-4">
+          <a href="<?php echo carbon_get_theme_option('crb_contact_instagram'); ?>" class="w-full h-full absolute left-0 right-0 z-10"></a>
+          <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/icons/instagram-icon-stroke.svg">
+        </li>
+        <li class="flex items-start mr-4">
+          <a href="<?php echo carbon_get_theme_option('crb_contact_youtube'); ?>" class="w-full h-full absolute left-0 right-0 z-10"></a>
+          <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/icons/youtube-icon-stroke.svg">
+        </li>
+        <li class="flex items-start">
+          <a href="<?php echo carbon_get_theme_option('crb_contact_facebook'); ?>" class="w-full h-full absolute left-0 right-0 z-10"></a>
+          <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/icons/facebook-icon-stroke.svg">
+        </li>
+      </ul>
+      <!-- END Соцсети -->
     </div>
 
     
