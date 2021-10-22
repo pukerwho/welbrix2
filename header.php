@@ -32,11 +32,11 @@
                   <a href="<?php echo carbon_get_theme_option('crb_contact_instagram'); ?>" class="w-full h-full absolute left-0 right-0 z-10"></a>
                   <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/icons/instagram-icon-stroke.svg">
                 </li>
-                <li class="flex items-start mr-2">
+                <li class="relative flex items-start mr-2">
                   <a href="<?php echo carbon_get_theme_option('crb_contact_youtube'); ?>" class="w-full h-full absolute left-0 right-0 z-10"></a>
                   <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/icons/youtube-icon-stroke.svg">
                 </li>
-                <li class="flex items-start">
+                <li class="relative flex items-start">
                   <a href="<?php echo carbon_get_theme_option('crb_contact_facebook'); ?>" class="w-full h-full absolute left-0 right-0 z-10"></a>
                   <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/icons/facebook-icon-stroke.svg">
                 </li>
