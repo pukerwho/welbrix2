@@ -81,7 +81,7 @@ Template Name: КОНТАКТЫ
 							</svg>
 						</div>
 						<div class="flex flex-col">
-							<span class="font-light"><?php echo crb_get_i18n_theme_option('crb_contact_address'); ?></span>
+							<span class="font-light"><?php echo crb_get_i18n_theme_option('crb_contact_address_sklad'); ?></span>
 						</div>
   				</div>
   				<div class="mb-8">

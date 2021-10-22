@@ -36,6 +36,7 @@ function crb_attach_theme_options() {
     ))
     ->add_tab( __('Контакты'), array(
       Field::make( 'text', 'crb_contact_address' . crb_get_i18n_suffix(), 'Адрес' ),
+      Field::make( 'text', 'crb_contact_address_sklad' . crb_get_i18n_suffix(), 'Адрес cклада' ),
       Field::make( 'complex', 'crb_contact_phones', 'Телефоны' )
         ->add_fields( array(
           Field::make( 'text', 'crb_contact_phone', 'Номер' ),
