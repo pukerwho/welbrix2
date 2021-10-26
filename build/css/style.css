@@ -62913,11 +62913,47 @@ html.lb-disable-scrolling {
 
 /* COLORS */
 /* FONTS SIZE */
+@font-face {
+  font-family: 'Spartan-Black';
+  src: local("Spartan-Black"), local("SpartanBlack"), url("../../fonts/Spartan/Spartan-Black.ttf") format("truetype");
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Spartan-Bold';
+  src: local("Spartan-Bold"), local("SpartanBold"), url("../../fonts/Spartan/Spartan-Bold.ttf") format("truetype");
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Spartan-ExtraBold';
+  src: local("Spartan-ExtraBold"), local("SpartanExtraBold"), url("../../fonts/Spartan/Spartan-ExtraBold.ttf") format("truetype");
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Spartan-Light';
+  src: local("Spartan-Light"), local("SpartanLight"), url("../../fonts/Spartan/Spartan-Light.ttf") format("truetype");
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Spartan-Medium';
+  src: local("Spartan-Medium"), local("SpartanMedium"), url("../../fonts/Spartan/Spartan-Medium.ttf") format("truetype");
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Spartan-Regular';
+  src: local("Spartan-Regular"), local("SpartanRegular"), url("../../fonts/Spartan/Spartan-Regular.ttf") format("truetype");
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Spartan-SemiBold';
+  src: local("Spartan-SemiBold"), local("SpartanSemiBold"), url("../../fonts/Spartan/Spartan-SemiBold.ttf") format("truetype");
+  font-display: swap; }
+
 body {
-  font-family: 'Spartan', sans-serif;
+  font-family: 'Spartan-Medium', sans-serif;
   background-color: #E5E5E5; }
 
 h1 {
+  font-family: 'Spartan-SemiBold', sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 26px;
@@ -62927,6 +62963,7 @@ h1 {
   color: #10084C; }
 
 h2 {
+  font-family: 'Spartan-SemiBold', sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 22px;
@@ -62943,6 +62980,7 @@ h2 {
   color: #10084C; }
 
 .dark-link {
+  font-family: 'Spartan-Medium', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
@@ -62954,6 +62992,7 @@ h2 {
   border: 1px solid #12114c; }
 
 .content h2 {
+  font-family: 'Spartan-SemiBold', sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
@@ -62964,6 +63003,7 @@ h2 {
   margin-bottom: 28px; }
 
 .content p {
+  font-family: 'Spartan-Regular', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -62979,6 +63019,7 @@ h2 {
   margin-bottom: 1rem;
   margin-left: 1rem; }
   .content ul li {
+    font-family: 'Spartan-Regular', sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -63014,6 +63055,7 @@ h2 {
   padding: 5px; }
 
 .btn_transparent {
+  font-family: 'Spartan-Medium', sans-serif;
   min-width: 350px;
   font-style: normal;
   font-weight: 500;
@@ -63029,6 +63071,7 @@ h2 {
       min-width: auto; } }
 
 .btn_blue {
+  font-family: 'Spartan-Medium', sans-serif;
   min-width: 350px;
   font-style: normal;
   font-weight: 500;
@@ -63095,6 +63138,7 @@ h2 {
   z-index: 11; }
 
 .form_submit {
+  font-family: 'Spartan-Medium', sans-serif;
   background: #2FA9ED;
   border-radius: 5px;
   font-weight: 500;
@@ -63122,6 +63166,7 @@ h2 {
     .woocommerce-pagination ul.page-numbers li {
       padding: 0 10px; }
       .woocommerce-pagination ul.page-numbers li > .page-numbers {
+        font-family: 'Spartan-SemiBold', sans-serif;
         width: 48px;
         height: 48px;
         display: -webkit-box;
@@ -63145,6 +63190,7 @@ h2 {
           background: #2FA9ED;
           border-radius: 5px; }
       .woocommerce-pagination ul.page-numbers li i {
+        font-family: 'Spartan-Bold', sans-serif;
         font-size: 21px;
         font-weight: 700; }
 
@@ -63178,6 +63224,7 @@ h2 {
   z-index: 11; }
 
 .header_top {
+  font-family: 'Spartan-Medium', sans-serif;
   background-color: #ffffff;
   color: #10084C;
   font-style: normal;
@@ -63207,6 +63254,7 @@ h2 {
         .header_bottom_icon.cart {
           margin-right: 20px; } }
       .header_bottom_icon.cart span {
+        font-family: 'Spartan-SemiBold', sans-serif;
         width: 14px;
         height: 11px;
         display: -webkit-box;
@@ -63313,6 +63361,7 @@ h2 {
     object-fit: cover;
     border-radius: 10px; }
   .welcome_slider_item_title {
+    font-family: 'Spartan-SemiBold', sans-serif;
     width: 50%;
     position: absolute;
     top: 0;
@@ -63383,6 +63432,7 @@ h2 {
     left: 0;
     z-index: 1; }
   .welcome_cat span {
+    font-family: 'Spartan-SemiBold', sans-serif;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -63406,6 +63456,7 @@ h2 {
   background-image: url("../../img/icons/arrow-right-icon.svg"); }
 
 .advantage_item p {
+  font-family: 'Spartan-SemiBold', sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 12px;
@@ -63415,6 +63466,7 @@ h2 {
   color: #10084C; }
 
 .advantage_item span {
+  font-family: 'Spartan-Medium', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
@@ -63422,6 +63474,7 @@ h2 {
   color: #10084C; }
 
 .products_tab_heading {
+  font-family: 'Spartan-Medium', sans-serif;
   position: relative;
   font-style: normal;
   font-weight: normal;
@@ -63453,6 +63506,7 @@ h2 {
     transition: transform 0.5s;
     transition: transform 0.5s, -webkit-transform 0.5s; }
   .products_tab_heading.active {
+    font-family: 'Spartan-Medium', sans-serif;
     font-weight: 500;
     color: #1598E1; }
     .products_tab_heading.active:after {
@@ -63500,6 +63554,7 @@ h2 {
     margin: auto;
     margin-top: -50px; }
   .post_title {
+    font-family: 'Spartan-SemiBold', sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 14px;
@@ -63508,6 +63563,7 @@ h2 {
     text-transform: uppercase;
     color: #10084C; }
   .post_description {
+    font-family: 'Spartan-Medium', sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -63545,6 +63601,7 @@ h2 {
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%); }
     .banner_info_subtitle {
+      font-family: 'Spartan-SemiBold', sans-serif;
       font-style: normal;
       font-weight: 600;
       font-size: 12px;
@@ -63559,6 +63616,7 @@ h2 {
           font-size: 8px;
           line-height: 9px; } }
     .banner_info_title {
+      font-family: 'Spartan-SemiBold', sans-serif;
       font-style: normal;
       font-weight: 600;
       font-size: 16px;
@@ -63575,6 +63633,7 @@ h2 {
 .send {
   background-color: #10084C; }
   .send_text {
+    font-family: 'Spartan-SemiBold', sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 12px;
@@ -63583,6 +63642,7 @@ h2 {
     color: #ffffff;
     text-transform: uppercase; }
   .send_btn {
+    font-family: 'Spartan-SemiBold', sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 12px;
@@ -63596,6 +63656,7 @@ h2 {
     outline: none;
     padding: 7px 15px; }
   .send input {
+    font-family: 'Spartan-Medium', sans-serif;
     min-width: 400px;
     background-color: #413970;
     color: #ffffff;
@@ -63610,6 +63671,7 @@ h2 {
         min-width: 60%; } }
 
 .contact_block li {
+  font-family: 'Spartan-Medium', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
@@ -63620,6 +63682,7 @@ h2 {
 .copyright {
   background-color: #F8F8F8; }
   .copyright_text {
+    font-family: 'Spartan-Medium', sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 11px;
@@ -63628,6 +63691,7 @@ h2 {
     opacity: 0.8; }
 
 .footer li {
+  font-family: 'Spartan-Medium', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
@@ -63636,6 +63700,7 @@ h2 {
   margin-bottom: 14px; }
 
 .footer_subtitle {
+  font-family: 'Spartan-SemiBold', sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 12px;
@@ -63673,6 +63738,7 @@ h2 {
       content: none; }
 
 .breadcrumbs a {
+  font-family: 'Spartan-Medium', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 11px;
@@ -63714,17 +63780,20 @@ h2 {
       border-top-left-radius: 10px;
       border-top-right-radius: 10px; }
   .single_item_date {
+    font-family: 'Spartan-Medium', sans-serif;
     font-weight: normal;
     font-size: 10px;
     line-height: 11px;
     color: #122735;
     opacity: 0.3; }
   .single_item_title {
+    font-family: 'Spartan-SemiBold', sans-serif;
     font-weight: 600;
     font-size: 15px;
     line-height: 17px;
     color: #122735; }
   .single_item_desc {
+    font-family: 'Spartan-Medium', sans-serif;
     font-weight: normal;
     font-size: 12px;
     line-height: 150%;
@@ -63796,6 +63865,7 @@ h2 {
     top: 0;
     z-index: 2; }
   .product_card_badge {
+    font-family: 'Spartan-SemiBold', sans-serif;
     position: absolute;
     top: 0;
     left: 0;
@@ -63822,6 +63892,7 @@ h2 {
       transition: transform 0.5s;
       transition: transform 0.5s, -webkit-transform 0.5s; }
   .product_card_id {
+    font-family: 'Spartan-Medium', sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 8px;
@@ -63829,18 +63900,21 @@ h2 {
     color: #000000;
     opacity: 0.5; }
   .product_card_title {
+    font-family: 'Spartan-Medium', sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
     line-height: 16px;
     color: #10084C; }
   .product_card_price {
+    font-family: 'Spartan-SemiBold', sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 14px;
     line-height: 16px;
     color: #10084C; }
     .product_card_price del {
+      font-family: 'Spartan-SemiBold', sans-serif;
       font-weight: bold;
       font-size: 12px;
       line-height: 13px;
@@ -63872,6 +63946,7 @@ h2 {
         -ms-transform: translateY(0);
         transform: translateY(0); } }
     .product_card_actions_add {
+      font-family: 'Spartan-Medium', sans-serif;
       height: 40px;
       font-style: normal;
       font-weight: 500;
@@ -63887,6 +63962,7 @@ h2 {
         padding: 12px 32px; }
 
 .product_sku {
+  font-family: 'Spartan-Medium', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 11px;
@@ -63894,6 +63970,7 @@ h2 {
   color: #10084C; }
 
 .product_stock {
+  font-family: 'Spartan-SemiBold', sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 11px;
@@ -63904,6 +63981,7 @@ h2 {
     color: #A30D0D; }
 
 .product_meta_info {
+  font-family: 'Spartan-Medium', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
@@ -63911,6 +63989,7 @@ h2 {
   color: #000000;
   border-bottom: 2px solid #E6E6E6; }
   .product_meta_info span {
+    font-family: 'Spartan-SemiBold', sans-serif;
     font-weight: 600;
     letter-spacing: 0.06em;
     text-transform: uppercase;
@@ -63931,6 +64010,7 @@ h2 {
     width: 100%; }
 
 .product_price {
+  font-family: 'Spartan-SemiBold', sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 22px;
@@ -63953,6 +64033,7 @@ h2 {
     text-decoration: none; }
 
 .product_btn {
+  font-family: 'Spartan-Medium', sans-serif;
   background: #10084C;
   border: 2px solid #10084C;
   -webkit-box-sizing: border-box;
@@ -63968,6 +64049,7 @@ h2 {
   text-transform: uppercase; }
 
 .product_description {
+  font-family: 'Spartan-Medium', sans-serif;
   border-top: 2px solid #E6E6E6;
   font-style: normal;
   font-weight: normal;
@@ -63975,6 +64057,7 @@ h2 {
   line-height: 22px;
   color: #000000; }
   .product_description span {
+    font-family: 'Spartan-SemiBold', sans-serif;
     font-weight: 600;
     font-size: 12px;
     line-height: 18px;
@@ -63984,12 +64067,14 @@ h2 {
     color: #10084C; }
 
 .product_content {
+  font-family: 'Spartan-Medium', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 22px;
   color: #000000; }
   .product_content .title {
+    font-family: 'Spartan-SemiBold', sans-serif;
     font-weight: 600;
     font-size: 12px;
     line-height: 18px;
@@ -63997,12 +64082,14 @@ h2 {
     color: #000000; }
 
 .product_params {
+  font-family: 'Spartan-Medium', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 22px;
   color: #000000; }
   .product_params .title {
+    font-family: 'Spartan-SemiBold', sans-serif;
     font-weight: 600;
     font-size: 12px;
     line-height: 18px;
@@ -64088,6 +64175,7 @@ h2 {
       .cart_item_qty input:focus {
         outline: none; }
   .cart_item_price {
+    font-family: 'Spartan-SemiBold', sans-serif;
     font-weight: bold;
     font-size: 14px;
     line-height: 16px;
@@ -64103,6 +64191,7 @@ h2 {
       background-color: transparent; }
 
 .cart_total {
+  font-family: 'Spartan-SemiBold', sans-serif;
   font-weight: bold;
   font-size: 14px;
   line-height: 17px;
@@ -64112,6 +64201,7 @@ h2 {
     line-height: 20px; }
 
 .checkout input {
+  font-family: 'Spartan-Medium', sans-serif;
   width: 100%;
   display: block;
   font-style: normal;
@@ -64145,17 +64235,20 @@ h2 {
       -o-object-fit: cover;
       object-fit: cover; }
   .checkout_cart_item_title {
+    font-family: 'Spartan-Medium', sans-serif;
     font-weight: normal;
     font-size: 12px;
     line-height: 13px;
     color: #10084C; }
   .checkout_cart_item_price {
+    font-family: 'Spartan-SemiBold', sans-serif;
     font-weight: bold;
     font-size: 14px;
     line-height: 16px;
     color: #10084C; }
 
 .checkout_cart_total {
+  font-family: 'Spartan-SemiBold', sans-serif;
   font-weight: bold;
   font-size: 16px;
   line-height: 18px;
@@ -64176,6 +64269,7 @@ h2 {
   margin-bottom: 30px; }
 
 #shipping_method label {
+  font-family: 'Spartan-SemiBold', sans-serif;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -64241,6 +64335,7 @@ h2 {
 
 /* FILTERS */
 .filter_mobile_toggle {
+  font-family: 'Spartan-Medium', sans-serif;
   position: fixed;
   left: 0;
   top: 25%;
@@ -64281,6 +64376,7 @@ h2 {
         display: block;
         z-index: 10; } }
   .filter_mobile_cover_close {
+    font-family: 'Spartan-Medium', sans-serif;
     width: 100%;
     background: #f8f8f8;
     border-radius: 5px;
@@ -64294,6 +64390,7 @@ h2 {
     padding: 18px; }
 
 #filter .wpfFilterTitle {
+  font-family: 'Spartan-SemiBold', sans-serif;
   font-weight: 600;
   font-size: 14px;
   line-height: 22px;
@@ -64312,6 +64409,7 @@ h2 {
   -ms-flex-direction: column;
   flex-direction: column; }
   #filter .wpfFilterButtons .wpfFilterButton {
+    font-family: 'Spartan-Medium', sans-serif;
     width: 100%;
     background: #2FA9ED;
     border-radius: 5px;
@@ -64325,6 +64423,7 @@ h2 {
     margin-bottom: 10px;
     padding: 18px; }
   #filter .wpfFilterButtons .wpfClearButton {
+    font-family: 'Spartan-Medium', sans-serif;
     width: 100%;
     background: #ffffff;
     border-radius: 5px;
@@ -64422,6 +64521,7 @@ h2 {
   .wishlist_table tbody {
     background-color: #ffffff; }
   .wishlist_table .product-add-to-cart a.button {
+    font-family: 'Spartan-Medium', sans-serif;
     display: inline-block !important;
     background-color: #10084C;
     border-radius: 10px;
