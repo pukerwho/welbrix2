@@ -23,8 +23,6 @@ require_once get_template_directory() . '/inc/welbrix-functions/woocommerce-func
 
 function welbrix_scripts() {
     wp_enqueue_style( 'styles', get_stylesheet_directory_uri() . '/build/css/style.css', false, time() );
-    // wp_enqueue_script( 'jquery' );
-    // wp_enqueue_script( 'jquery-ui-core' );
     wp_enqueue_script( 'all-scripts', get_template_directory_uri() . '/build/js/all.js', '','',true);
 };
 add_action( 'wp_enqueue_scripts', 'welbrix_scripts' );
@@ -51,6 +49,14 @@ remove_action( 'wp_head', 'feed_links', 2 );
 add_action( 'after_setup_theme', function() {
   remove_theme_support( 'yoast-seo-breadcrumbs' );
 }, 20 );
+
+add_action( 'wp', 'ts_remove_zoom_lightbox_gallery_support', 99 );
+   
+function ts_remove_zoom_lightbox_gallery_support() { 
+   remove_theme_support( 'wc-product-gallery-zoom' );
+   remove_theme_support( 'wc-product-gallery-lightbox' );
+   remove_theme_support( 'wc-product-gallery-slider' );
+}
 
 register_nav_menus( array(
     'top_header' => 'Верхнее меню',
