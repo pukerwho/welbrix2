@@ -22,6 +22,7 @@ require_once get_template_directory() . '/inc/custom-fields/product-meta.php';
 require_once get_template_directory() . '/inc/welbrix-functions/woocommerce-functions.php';
 
 function welbrix_scripts() {
+    wp_enqueue_style( 'tailwind', get_stylesheet_directory_uri() . '/build/css/tailwind.css', false, time() );
     wp_enqueue_style( 'styles', get_stylesheet_directory_uri() . '/build/css/style.css', false, time() );
     wp_enqueue_script( 'all-scripts', get_template_directory_uri() . '/build/js/all.js', '','',true);
 };
