@@ -70,7 +70,7 @@
           <div class="flex justify-between items-center">
             <div class="logo">
               <a href="<?php echo home_url(); ?>">
-                <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/icons/logo.svg" alt="Лого">
+                <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/icons/logo.svg" alt="Лого" width="153" height="18">
               </a>
             </div>
             <div class="flex items-center md:hidden">
