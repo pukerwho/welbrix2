@@ -912,6 +912,8 @@ h2 {
 
 .lang .menu-item-has-children:hover .sub-menu {
   display: block; }
+  .lang .menu-item-has-children:hover .sub-menu > li {
+    padding-top: 5px; }
 
 .lang .sub-menu {
   display: none;
