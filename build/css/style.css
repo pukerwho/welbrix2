@@ -782,37 +782,37 @@ html.lb-disable-scrolling {
 @font-face {
   font-family: 'Spartan-Black';
   src: local("Spartan-Black"), local("SpartanBlack"), url("../../fonts/Spartan/Spartan-Black.ttf") format("truetype");
-  font-display: swap; }
+  /*font-display: swap;*/ }
 
 @font-face {
   font-family: 'Spartan-Bold';
   src: local("Spartan-Bold"), local("SpartanBold"), url("../../fonts/Spartan/Spartan-Bold.ttf") format("truetype");
-  font-display: swap; }
+  /*font-display: swap;*/ }
 
 @font-face {
   font-family: 'Spartan-ExtraBold';
   src: local("Spartan-ExtraBold"), local("SpartanExtraBold"), url("../../fonts/Spartan/Spartan-ExtraBold.ttf") format("truetype");
-  font-display: swap; }
+  /*font-display: swap;*/ }
 
 @font-face {
   font-family: 'Spartan-Light';
   src: local("Spartan-Light"), local("SpartanLight"), url("../../fonts/Spartan/Spartan-Light.ttf") format("truetype");
-  font-display: swap; }
+  /*font-display: swap;*/ }
 
 @font-face {
   font-family: 'Spartan-Medium';
   src: local("Spartan-Medium"), local("SpartanMedium"), url("../../fonts/Spartan/Spartan-Medium.ttf") format("truetype");
-  font-display: swap; }
+  /*font-display: swap;*/ }
 
 @font-face {
   font-family: 'Spartan-Regular';
   src: local("Spartan-Regular"), local("SpartanRegular"), url("../../fonts/Spartan/Spartan-Regular.ttf") format("truetype");
-  font-display: swap; }
+  /*font-display: swap;*/ }
 
 @font-face {
   font-family: 'Spartan-SemiBold';
   src: local("Spartan-SemiBold"), local("SpartanSemiBold"), url("../../fonts/Spartan/Spartan-SemiBold.ttf") format("truetype");
-  font-display: swap; }
+  /*font-display: swap;*/ }
 
 body {
   font-family: 'Spartan-Medium', sans-serif;
