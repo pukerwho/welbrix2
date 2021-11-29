@@ -92,7 +92,8 @@
 				<div class="content pt-10">
 					<!-- ТЕКСТ -->
 					<div>
-						<?php echo carbon_get_term_meta(get_queried_object_id(), 'crb_product_cat_content') ?>
+						<?php $content_text = carbon_get_term_meta(get_queried_object_id(), 'crb_product_cat_content'); ?>
+						<?php echo apply_filters( 'the_content', $content_text  ); ?>	
 					</div>
 					<!-- END ТЕКСТ -->
 					<!-- FAQ -->
