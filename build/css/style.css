@@ -868,6 +868,21 @@ h2 {
   color: #10084C;
   margin-bottom: 28px; }
 
+.content h3 {
+  font-family: 'Spartan-SemiBold', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #10084C;
+  margin-bottom: 15px; }
+  @media (max-width: 767px) {
+    .content h3 {
+      font-size: 16px;
+      line-height: 22px; } }
+
 .content p {
   font-family: 'Spartan-Regular', sans-serif;
   font-style: normal;
